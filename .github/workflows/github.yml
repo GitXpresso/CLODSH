@@ -1,0 +1,16 @@
+            - name: TruffleHog OSS
+  # You may pin to the exact commit or the version.
+  # uses: trufflesecurity/trufflehog@ead9dd57486f43830ba2279f3a3c49d4b9c36633
+  uses: trufflesecurity/trufflehog@v3.76.1
+  with:
+    # Repository path
+    path: # optional, default is ./
+    # Start scanning from here (usually main branch).
+    base: # optional, default is 
+    # Scan commits until here (usually dev branch).
+    head: # optional
+    # Extra args to be passed to the trufflehog cli.
+    extra_args: # optional, default is 
+    # Scan with this trufflehog cli version.
+    version: # optional, default is latest
+          
