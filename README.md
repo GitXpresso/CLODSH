@@ -59,7 +59,7 @@ Or
 [Chromium](https://www.chromium.org/chromium-projects/) is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.
 
 # Table of Contents
-
+- [Versions](#Versions)
 Supported Architectures
 ---------------------------------------------------------------------
 
@@ -503,8 +503,7 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 
 
 Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64`.
-
-Versions
+## Versions
 ---------------------------------------
 
 *   **10.02.24:** - Update Readme with new env vars and ingest proper PWA icon.
