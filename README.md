@@ -53,8 +53,14 @@ Or
 ```
 # Chromium
 
+[![chromium](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chromium-logo.png)](https://www.chromium.org/chromium-projects/)
+
 
 [Chromium](https://www.chromium.org/chromium-projects/) is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.
+
+# Table of Contents
+
+ 
 
 # Tor
 <p align="center">
