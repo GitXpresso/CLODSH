@@ -22,11 +22,13 @@ Originally Created by: [Jlesage](https://github.com/jlesage)
 
 Original Repository: [Docker Firefox](https://github.com/jlesage/docker-firefox)
 
-Donate to the Original Creator pf Docker Firefox
+Donate to the Original Creator of Docker Firefox
 
 [Paypal](https://paypal.me/JocelynLeSage)
 
 [Testla Referal](https://www.tesla.com/referral/jocelyn4590)
+
+To learn about the tesla referral program go [here](https://www.notateslaapp.com/news/2210/tesla-brings-back-referral-program)
 
 # Firefox Setup
 
