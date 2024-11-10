@@ -24,8 +24,7 @@ Originally Created by: [Jlesage](https://github.com/jlesage)
 Original Repository: [Docker Firefox](https://github.com/jlesage/docker-firefox)
 
 Donate to the Original Creator of Docker Firefox
-
-[Paypal](https://paypal.me/JocelynLeSage)
+[![PayPal](https://img.shields.io/badge/PayPal-003087?logo=paypal&logoColor=fff)](https://paypal.me/JocelynLeSage)
 
 
 # Firefox Setup
