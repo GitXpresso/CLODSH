@@ -59,6 +59,8 @@ Original Repository: [Docker Chromium](https://github.com/linuxserver/chromium)
 
 Creator website: [linuxserver.io](https://linuxserver.io)
 
+Donations : [Linux Server Open collective](https://opencollective.com/linuxserver/)
+
 # Table of Contents
 - [Application Setup](#Application-Setup)
 - [Security](#Security)
