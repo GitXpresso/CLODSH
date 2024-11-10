@@ -24,6 +24,10 @@
 Mozilla Firefox is a free and open-source web browser developed by Mozilla
 Foundation and its subsidiary, Mozilla Corporate. 
 
+Chromium Official Github Mirror: [chromium](https://github.com/chromium/chromium)
+
+Chromium official website: [chromium.org](https://chromium.org)
+
 Originally Created by: [Jlesage](https://github.com/jlesage)
 
 Original Repository: [Docker Firefox](https://github.com/jlesage/docker-firefox)
