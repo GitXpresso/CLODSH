@@ -10,6 +10,7 @@
 - [Ungoogled Chromium](#Ungoogled-Chromium)
 - [Opera](#Opera) 
 - [Tor](#Tor)
+
 </details>
 
 # Firefox
