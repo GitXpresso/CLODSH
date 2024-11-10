@@ -17,8 +17,10 @@
 
 Mozilla Firefox is a free and open-source web browser developed by Mozilla
 Foundation and its subsidiary, Mozilla Corporate. 
-[Creator of the Original Repository](https://github.com/jlesage)
-[Creators Repository](https://github.com/jlesage/docker-firefox)
+
+Originally Created by: [Jlesage](https://github.com/jlesage)
+
+Original Repository: [Docker Firefox](https://github.com/jlesage/docker-firefox)
 
 # Firefox Setup
 
@@ -44,7 +46,7 @@ Or
   <img width="300px" src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Tor_project_logo_hq.png">
 </p
 
-Created by [DomiStyles](https://github.com/DomiStyle)
+Originally Created by: [DomiStyles](https://github.com/DomiStyle)
 
 Forked and Edited by:
 [GitXpresso](https://github.com/GitXpresso)
