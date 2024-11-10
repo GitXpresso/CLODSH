@@ -3,7 +3,7 @@
 
 # Table of Contents
 
-<details><summary>SHBrowsers</summary>
+<details><summary>Browsers</summary>
 
 - [Firefox](#Firefox)
 - [Chromium](#Chromium)
@@ -17,6 +17,8 @@
 
 Mozilla Firefox is a free and open-source web browser developed by Mozilla
 Foundation and its subsidiary, Mozilla Corporate. 
+[Creator of the Original Repository](https://github.com/jlesage)
+[Creators Repository](https://github.com/jlesage/docker-firefox)
 
 # Firefox Setup
 
@@ -335,3 +337,4 @@ sudo usermod -aG docker $USER
 [GitXpresso](https://github.com/GitXpresso)
 
 
+Browsersh Version: 1.0
