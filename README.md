@@ -339,4 +339,4 @@ sudo usermod -aG docker $USER
 [GitXpresso](https://github.com/GitXpresso)
 
 
-Browsersh Version: 1.0
+Browsersh Version: 1.2
