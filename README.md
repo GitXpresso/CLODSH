@@ -548,7 +548,9 @@ Original Repository: [Docker Tor Browser](https://github.com/DomiStyle/docker-to
    
 <details><summary>Docker</summary>
 
-
+- [Docker Compose Script](#Docker-Compose-Script)
+- [Docker Container Commands](#Docker-Container-Commands)
+- [Docker Installation](#How-to-install-Docker)
 
 </details>
    
