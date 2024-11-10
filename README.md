@@ -55,8 +55,11 @@ Or
 
 [![chromium](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chromium-logo.png)](https://www.chromium.org/chromium-projects/)
 
-
 [Chromium](https://www.chromium.org/chromium-projects/) is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.
+
+Originally Created by: [LinuxServer](https://github.com/linuxserver)
+Original Repository: [Docker Chromium](https://github.com/linuxserver/chromium)
+Creator website: [linuxserver.io](https://linuxserver.io)
 
 # Table of Contents
 - [Application Setup](#Application-Setup)
