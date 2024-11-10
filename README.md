@@ -102,9 +102,11 @@ Application Setup
 The application can be accessed at:
 
 *   http://yourhost:3000/
-*   https://yourhost:3001/
+*   https://yourhost:3001/*   
 
-**Modern GUI desktop apps have issues with the latest Docker and syscall compatibility, you can use Docker with the `--security-opt seccomp=unconfined` setting to allow these syscalls on hosts with older Kernels or libseccomp**
+To Run the selfhosted chromium do the following commands below
+
+*Modern GUI desktop apps have issues with the latest Docker and syscall compatibility, you can use Docker with the `--security-opt seccomp=unconfined` setting to allow these syscalls on hosts with older Kernels or libseccomp**
 
 ### Security
 
