@@ -58,7 +58,9 @@ Or
 [Chromium](https://www.chromium.org/chromium-projects/) is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.
 
 Originally Created by: [LinuxServer](https://github.com/linuxserver)
+
 Original Repository: [Docker Chromium](https://github.com/linuxserver/chromium)
+
 Creator website: [linuxserver.io](https://linuxserver.io)
 
 # Table of Contents
