@@ -59,10 +59,15 @@ Or
 [Chromium](https://www.chromium.org/chromium-projects/) is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.
 
 # Table of Contents
+- [Parameters](#Parameters)
+- [Environment variables from files Docker secrets](#Environment-variables-from-files-Docker-secrets)
+- [Umask for running applications](#Umask-for-running-applications)
+- [User / Group Identifiers](#Use-/-Group-Identifiers)
 - [Docker-Mods](#Docker-Mods)
 - [Support Info](#Support-Info)
 - [Building locally](#Building-locally)
 - [Versions](#Versions)
+
 Supported Architectures
 ---------------------------------------------------------------------
 
@@ -346,7 +351,7 @@ Containers are configured using parameters passed at runtime (such as those abov
   * Function: For Docker Engine only, many modern gui apps need this to function on older hosts as syscalls are unknown to Docker. Chromium runs in no-sandbox test mode without it.
 
 
-Environment variables from files (Docker secrets)
+Environment variables from files Docker secrets
 -----------------------------------------------------------------------------------------------------------------------
 
 You can set any environment variable from a file by using a special prepend `FILE__`.
