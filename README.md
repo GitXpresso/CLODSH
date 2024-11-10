@@ -60,7 +60,7 @@ Or
 
 # Table of Contents
 - [Docker-Mods](#Docker-Mods)
-- [Docker Info](#Docker-Info)
+- [Support Info](#Support-Info)
 - [Building locally](#Building-locally)
 - [Versions](#Versions)
 Supported Architectures
