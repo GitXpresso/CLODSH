@@ -59,6 +59,14 @@ Or
 [Chromium](https://www.chromium.org/chromium-projects/) is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.
 
 # Table of Contents
+- [Application Setup](#Application-Setup)
+- [Security](#Security)
+- [Options in all KasmVNC based GUI containers](Options-in-all-KasmVNC-based-GUI-containers)
+- [Language Support - Internationalization](#Language-Support-Internationalization)
+- [DRI3 GPU Acceleration](#DRI3-GPU-Acceleration)
+- [Nvidia GPU Support](#Nvidia-GPU-Support)
+- [Application management](#Application-management)
+- [Usage](#Usage)
 - [Parameters](#Parameters)
 - [Environment variables from files Docker secrets](#Environment-variables-from-files-Docker-secrets)
 - [Umask for running applications](#Umask-for-running-applications)
