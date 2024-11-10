@@ -833,4 +833,4 @@ sudo usermod -aG docker $USER
 [GitXpresso](https://github.com/GitXpresso)
 
 
-Browsersh Readme.md Version: 1.34
+#### Browsersh Readme.md Version: 1.35
