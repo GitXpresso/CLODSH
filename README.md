@@ -728,7 +728,7 @@ Both amd64 and arm64 container runtimes are supported, but only the amd64 image 
 
 # Usage
 
-See the docker-compose [here](https://github.com/DomiStyle/docker-tor-browser/blob/master/docker-compose.yml) or use this command
+See the docker-compose [here](https://github.com/DomiStyle/docker-tor-browser/blob/master/docker-compose.yml) or use this command as a faster way of installing Tor.
 
     docker run -d -p 5800:5800 domistyle/tor-browser
 
