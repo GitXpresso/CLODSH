@@ -3,7 +3,7 @@ version: '3.9'
 services:
   tor:
     image: domistyle/tor-browser
-    container_name: Tor
+    container_name: tor
     restart: unless-stopped
     ports:
       - 5800:5800
