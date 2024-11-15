@@ -694,7 +694,8 @@ sudo usermod -aG docker $USER
 * shm_size might need to be set to 2GB or more if you experience crashes
 ### Github user who updated this markdown:
 [GitXpresso](https://github.com/GitXpresso)
-Docker-Compose-Script)
+<details><summary>Docker</summary>
+- [Docker Compose Script](#Docker-Compose-Script)
 - [Docker Container Commands](#Docker-Container-Commands)
 - [Docker Installation](#How-to-install-Docker)
 
