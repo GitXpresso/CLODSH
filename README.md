@@ -592,7 +592,10 @@ See the docker-compose [here](https://github.com/DomiStyle/docker-tor-browser/bl
     docker run -d -p 5800:5800 domistyle/tor-browser
 
 The web interface will be available on port 5800.
-
+to use port on a browser go to this url
+```
+127.0.0.1:8080
+```
 ## Platform configuration
 
 No special configuration is necessary, however some recommended variables are available:
