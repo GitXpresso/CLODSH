@@ -2,7 +2,7 @@
 The sh in docker sh stands for self hosted folders will be ready for you to run browsers and others stuff the orginal people who made the docker container will be credited.
 ## Todo 
 - [X] Finish making Docker installation on kali linux tutorial
-- [ ] Finish making docker compose installation on kali linux tutorial
+- [X] Finish making docker compose installation on kali linux tutorial
 - [ ] 
 
 # Table of Contents
@@ -20,6 +20,7 @@ The sh in docker sh stands for self hosted folders will be ready for you to run 
  
  - [How to Install Docker on Kali Linux](#How-to-Install-Docker-on-Kali-Linux)
  - [How to Install Docker Compose on Kali Linux](#How-to-Install-Docker-Compose-on-Kali-Linux)
+ - [Docker Compose Guide](#Docker-Compose-Guide)
 
 </details>
 
@@ -937,6 +938,19 @@ Add user to docker group:
 ```
 sudo usermod -aG docker $USER
 newgrp docker
+```
+# Docker Compose Guide
+To install and run the container do
+```
+docker compose up
+```
+To restart the container do
+```
+docker compose restart
+```
+To remove the container do
+```
+docker compose down
 ```
 
 ## CLODSH Readmemd 
