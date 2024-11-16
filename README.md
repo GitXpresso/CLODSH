@@ -1,5 +1,8 @@
 # dockersh
 ## The sh in docker sh stands for self hosted folders will be ready for you to run browsers and others stuff the orginal people who made the docker container will be credited
+#Todo 
+- [ ] Finish making Docker installation on kali linux tutorial
+- [ ] Finish malimg docker compose installation on kali linux tutorial
 
 # Table of Contents
 
@@ -10,6 +13,12 @@
 - [Ungoogled Chromium](#Ungoogled-Chromium)
 - [Opera](#Opera) 
 - [Tor](#Tor)
+</details>
+
+<details><summary>Docker Installation</summary>
+ 
+ - [How to Install Docker on Kali Linux](#How-to-Install-Docker-on-Kali-Linux)
+ - [How to Install Docker Compose on Kali Linux](#How-to-Install-Docker-Compose-on-Kali-Linux)
 
 </details>
 
@@ -840,5 +849,24 @@ sudo usermod -aG docker $USER
 ### Github user who updated this markdown:
 [GitXpresso](https://github.com/GitXpresso)
 
+# How to Install Docker on Kali Linux
+
+## Step 1: Install Dependency packages
+Start the installation by ensuring that all the packages used by docker as dependencies are installed.
+```bash
+sudo apt update && sudo apt -y full-upgrade
+sudo apt install curl gnupg2 apt-transport-https software-properties-common ca-certificates
+```
+## Check if a reboot is required after the upgrade:
+```
+[ -f /var/run/reboot-required ] && sudo reboot -f
+```
+## Step 2: Import Docker GPG key
+Import Docker GPG key used for signing Docker packages:
+```
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-archive-keyring.gpg
+```
+
+# How to Install Docker Compose on Kali Linux
 
 #### Browsersh Readme.md Version: 1.35
