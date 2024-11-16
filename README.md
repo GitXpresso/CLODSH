@@ -909,7 +909,5 @@ Check Docker version installed.
 docker version
 ```
 # How to Install Docker Compose on Kali Linux
-# Visitors
-![Visitor Count](https://profile-counter.glitch.me/gitxpresso/count.svg)
 ## CLODSH Readmemd 
 Version: 1.35
