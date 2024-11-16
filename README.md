@@ -931,7 +931,8 @@ To know if you successfully install docker compose you need to confirm the versi
 docker-compose version
 ```
 The output should look this:
- `Docker Compose version v2.28.1` 
+
+`Docker Compose version v2.28.1` 
  
 ## Part 5
 Add user to docker group:
