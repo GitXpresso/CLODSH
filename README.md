@@ -1,5 +1,5 @@
 # Dockersh
-The sh in docker sh stands for self hosted folders will be ready for you to run browsers and others stuff the orginal people who made the docker container will be credited
+The sh in docker sh stands for self hosted folders will be ready for you to run browsers and others stuff the orginal people who made the docker container will be credited.
 ## Todo 
 - [X] Finish making Docker installation on kali linux tutorial
 - [ ] Finish malimg docker compose installation on kali linux tutorial
@@ -23,10 +23,10 @@ The sh in docker sh stands for self hosted folders will be ready for you to run 
 
 </details>
 
-<details><summary>Other things that has nonthing to do with or about this repository</summary>
+<details><summary>things that has nonthing to do with or about this repository</summary>
  
 - [Visitor's Counter](#Visitors)
-- [Repository Version](#CLODSH-Readme.md)
+- [Repository Version](#CLODSH-Readmemd)
 
 </details>
 
@@ -911,5 +911,5 @@ docker version
 # How to Install Docker Compose on Kali Linux
 # Visitors
 ![Visitor Count](https://profile-counter.glitch.me/gitxpresso/count.svg)
-#### CLODSH Readme.md 
+## CLODSH Readmemd 
 Version: 1.35
