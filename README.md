@@ -869,6 +869,20 @@ Import Docker GPG key used for signing Docker packages:
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-archive-keyring.gpg
 ```
 
+## Step 3: Add the Docker repository to Kali Linux
+Add Docker repository which contain the latest stable releases of Docker CE.
+
+```
+echo "deb [arch=amd64] https://download.docker.com/linux/debian bullseye stable" | sudo tee  /etc/apt/sources.list.d/docker.list
+```
+This command will add repository URL to /etc/apt/sources.list.d/docker.list.
+
+## Step 4: Install Docker on Kali Linux
+Update the apt package index.
+```
+sudo apt update
+```
+
 # How to Install Docker Compose on Kali Linux
 
 #### Browsersh Readme.md Version: 1.35
