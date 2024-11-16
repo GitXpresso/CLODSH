@@ -1,7 +1,7 @@
 # dockersh
 ## The sh in docker sh stands for self hosted folders will be ready for you to run browsers and others stuff the orginal people who made the docker container will be credited
 ## Todo 
-- [ ] Finish making Docker installation on kali linux tutorial
+- [X] Finish making Docker installation on kali linux tutorial
 - [ ] Finish malimg docker compose installation on kali linux tutorial
 
 # Table of Contents
@@ -882,12 +882,24 @@ Update the apt package index.
 ```
 sudo apt update
 ```
+## Step 5
 To install Docker CE on Kali Linux, run the command:
  ```
 sudo apt install docker-ce docker-ce-cli containerd.io
 ```
 Hit the y key to start installation of Docker on Kali Linux.
 
+## Step 6
+This installation will add docker group to the system without any users. Add your user account to the group to run docker commands as non-privileged user.
+```
+sudo usermod -aG docker $USER
+newgrp docker
+```
+## Step 7
+Check Docker version installed.
+```
+docker version
+```
 # How to Install Docker Compose on Kali Linux
 
 #### Browsersh Readme.md Version: 1.35
