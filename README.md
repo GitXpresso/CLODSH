@@ -3,6 +3,7 @@
 ## Todo 
 - [X] Finish making Docker installation on kali linux tutorial
 - [ ] Finish malimg docker compose installation on kali linux tutorial
+- [ ] 
 
 # Table of Contents
 
@@ -852,7 +853,7 @@ sudo usermod -aG docker $USER
 [GitXpresso](https://github.com/GitXpresso)
 
 # How to Install Docker on Kali Linux
-
+![Docker](https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png)
 ## Step 1: Install Dependency packages
 Start the installation by ensuring that all the packages used by docker as dependencies are installed.
 ```bash
