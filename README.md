@@ -741,9 +741,9 @@ Both amd64 and arm64 container runtimes are supported, but only the amd64 image 
 
 # Usage
 
-See the docker-compose [here](https://github.com/DomiStyle/docker-tor-browser/blob/master/docker-compose.yml) or use this command as a faster way of installing Tor.
+See the docker-compose [here](https://github.com/DomiStyle/docker-tor-browser/blob/master/docker-compose.yml) to use this command as a faster way of installing Tor.
 
-    docker run -d -p 5800:5800 --name tor domistyle/tor-browser
+    docker run -d -p 5800:5800 --name tor domistyle/tor-browser --restart=unless-stopped
 
 The web interface will be available on port 5800.
 
@@ -757,6 +757,7 @@ No special configuration is necessary, however some recommended variables are av
 | `DISPLAY_HEIGHT` | Set the height of the virtual screen | ``768`` | No |
 | `KEEP_APP_RUNNING` | Automatically restarts the Tor browser if it exits | ``0`` | No |
 | `TZ` | Set the time zone for the container | - | No |
+| `Port_Url`| to view tor on your browser 
 
 ** For advanced configuration options please take a look [here](https://github.com/jlesage/docker-baseimage-gui#environment-variables).**
 
@@ -842,6 +843,9 @@ sudo usermod -aG docker $USER
 |------------|----------------------------------------------|
 | `5800` | Provides a web interface to access the Tor browser |
 | `5900` | Provides direct access to the NoVNC server |
+| Tor IP | Description                                     |    
+|------------|----------------------------------------------|
+| `127.0.0.1` | Provides a way to use tor on your browser |
 
 ## Issues And limitations
 
@@ -850,6 +854,8 @@ sudo usermod -aG docker $USER
 [GitXpresso](https://github.com/GitXpresso)
 
 # How to Install Docker on Kali Linux
+
+[![content://com.amazon.cloud9.FileProvider/images/screenshot/1731718166865401403532.png![DockerImage](https://github.com/user-attachments/assets/a23a72ca-66f5-46ec-8d9b-a4b5c5f5f3a2)
 
 ## Step 1: Install Dependency packages
 Start the installation by ensuring that all the packages used by docker as dependencies are installed.
