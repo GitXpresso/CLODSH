@@ -853,8 +853,6 @@ sudo usermod -aG docker $USER
 
 # How to Install Docker on Kali Linux
 
-[![content://com.amazon.cloud9.FileProvider/images/screenshot/1731718166865401403532.png![DockerImage](https://github.com/user-attachments/assets/a23a72ca-66f5-46ec-8d9b-a4b5c5f5f3a2)
-
 ## Step 1: Install Dependency packages
 Start the installation by ensuring that all the packages used by docker as dependencies are installed.
 ```bash
