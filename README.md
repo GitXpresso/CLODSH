@@ -757,7 +757,6 @@ No special configuration is necessary, however some recommended variables are av
 | `DISPLAY_HEIGHT` | Set the height of the virtual screen | ``768`` | No |
 | `KEEP_APP_RUNNING` | Automatically restarts the Tor browser if it exits | ``0`` | No |
 | `TZ` | Set the time zone for the container | - | No |
-| `Port_Url`| to view tor on your browser 
 
 ** For advanced configuration options please take a look [here](https://github.com/jlesage/docker-baseimage-gui#environment-variables).**
 
@@ -843,8 +842,7 @@ sudo usermod -aG docker $USER
 |------------|----------------------------------------------|
 | `5800` | Provides a web interface to access the Tor browser |
 | `5900` | Provides direct access to the NoVNC server |
-| Tor IP | Description                                     |    
-|------------|----------------------------------------------|
+| IP | Description                                     |    
 | `127.0.0.1` | Provides a way to use tor on your browser |
 
 ## Issues And limitations
