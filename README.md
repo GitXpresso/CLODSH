@@ -23,6 +23,13 @@ The sh in docker sh stands for self hosted folders will be ready for you to run 
 
 </details>
 
+<details><summary>Other things that has nonthing to do with or about this repository</summary>
+ 
+- [Visitor's Counter](#Visitors)
+- [Repository Version](#CLODSH-Readme.md)
+
+</details>
+
 # Firefox
 [![Firefox logo](https://images.weserv.nl/?url=raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/firefox-icon.png&w=110)](https://www.mozilla.org/firefox/)[![Firefox](https://images.placeholders.dev/?width=224&height=110&fontFamily=monospace&fontWeight=400&fontSize=52&text=Firefox&bgColor=rgba(0,0,0,0.0)&textColor=rgba(121,121,121,1))](https://www.mozilla.org/firefox/)
 
@@ -902,5 +909,7 @@ Check Docker version installed.
 docker version
 ```
 # How to Install Docker Compose on Kali Linux
-
-#### Browsersh Readme.md Version: 1.35
+# Visitors
+![Visitor Count](https://profile-counter.glitch.me/gitxpresso/count.svg)
+#### CLODSH Readme.md 
+Version: 1.35
