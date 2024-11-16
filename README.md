@@ -882,6 +882,11 @@ Update the apt package index.
 ```
 sudo apt update
 ```
+To install Docker CE on Kali Linux, run the command:
+ ```
+sudo apt install docker-ce docker-ce-cli containerd.io
+```
+Hit the y key to start installation of Docker on Kali Linux.
 
 # How to Install Docker Compose on Kali Linux
 
