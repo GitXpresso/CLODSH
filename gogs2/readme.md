@@ -43,5 +43,5 @@ The Gogs (`/gɑgz/`) project aims to build a simple, stable and extensible self-
 - Please see [Semantic UI](https://github.com/Semantic-Org/Semantic-UI#browser-support) for specific versions of supported browsers.
 - The smallest resolution officially supported is **1024*768**, however the UI may still look right in smaller resolutions, but no promises or fixes.
 
-## Docker Installation
+# Docker Installation
 ![Docker](https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png)
