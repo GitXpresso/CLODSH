@@ -17,6 +17,8 @@ The sh in docker sh stands for self hosted folders will be ready for you to run 
 </details>
 
 <details><summary>Workspace</summary>
+ 
+</details>
 
 [Gogs](#Gogs)
  
