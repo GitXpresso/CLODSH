@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "chmod u+x ./cloudron.sh
+echo chmod u+x ./cloudron.sh
 
 wget https://cloudron.io/cloudron-setup
 
