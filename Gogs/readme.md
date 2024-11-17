@@ -45,3 +45,16 @@ The Gogs (`/gɑgz/`) project aims to build a simple, stable and extensible self-
 
 # Docker Installation
 ![Docker](https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png)
+
+# Bash Installation
+This is an easier and dont need to copy and paste so much way
+## Part 1
+make gogs.sh executable
+```shell
+chmod u+x
+```
+## Part 2
+Run gogs.sh
+```
+./gogs.sh
+```
