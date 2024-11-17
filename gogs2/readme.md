@@ -11,11 +11,11 @@
   
   - [Docker Installation](#Docker-Installation)
   
-    * [Docker for Gogs](#Docker-for-Gogs)
-     * [Usage](#Usage)
-      * [Settings](#Settings)
-       * [Backup system](#Backup-system)
-        * [Upgrade](#Upgrade)
+     * [Docker for Gogs](#Docker-for-Gogs)
+       * [Usage](#Usage)
+         * [Settings](#Settings)
+           * [Backup system](#Backup-system)
+             * [Upgrade](#Upgrade)
  
 ## 🔮 Vision
 
