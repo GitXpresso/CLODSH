@@ -16,6 +16,10 @@ The sh in docker sh stands for self hosted folders will be ready for you to run 
 - [Tor](#Tor)
 </details>
 
+<details><summary>Workspace</summary>
+
+[Gogs](#Gogs)
+ 
 <details><summary>Docker Installation</summary>
  
  - [How to Install Docker on Kali Linux](#How-to-Install-Docker-on-Kali-Linux)
@@ -859,6 +863,9 @@ sudo usermod -aG docker $USER
 * shm_size might need to be set to 2GB or more if you experience crashes
 ### Github user who updated this markdown:
 [GitXpresso](https://github.com/GitXpresso)
+
+
+#Gogs 
 
 # How to Install Docker on Kali Linux
 ![Docker](https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png)
