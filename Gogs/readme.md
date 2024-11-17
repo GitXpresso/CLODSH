@@ -51,7 +51,7 @@ This is an easier and dont need to copy and paste so much way
 ## Part 1
 make gogs.sh executable
 ```shell
-chmod u+x
+chmod u+x gogs.sh
 ```
 ## Part 2
 Run gogs.sh
