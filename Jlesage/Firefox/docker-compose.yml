@@ -1,0 +1,8 @@
+version: '3'
+services:
+  firefox:
+    image: jlesage/firefox
+    ports:
+      - "5800:5800"
+    volumes:
+      - "/docker/appdata/firefox:/config:rw"
