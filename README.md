@@ -1217,5 +1217,21 @@ Run the bash file
 ```
 ./go.sh
 ```
+# Uninstalling Go
+## Step 1
+Move from CLODSH to CLODSH/Shell
+```bash
+cd Shell
+```
+## Step 2
+Make the file executable
+```bash
+chmod u+x ./uninstallgo.sh
+```
+Step 3
+Uninstalling Go
+```bash
+./uninstallgo.sh
+```
 ## CLODSH Readmemd 
 Version: 1.38
