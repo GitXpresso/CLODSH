@@ -893,6 +893,7 @@ Donate:
          * [Settings](#Settings)
            * [Backup system](#Backup-system)
              * [Upgrade](#Upgrade)
+               * [Quick Start](#Quick-Start)
  
 ## 🔮 Vision
 
@@ -1189,6 +1190,21 @@ To remove the container do
 ```
 docker compose down
 ```
-
+# Quick Start
+## Step 1
+Make the file executable
+```bash
+chmod u+x ./gogs.sh
+```
+Starting gogs.sh
+```bash
+./gogs.sh
+```
+Dont have go installed them heres a tutorial, only has 2 steps
+## Step 1
+Make the file executable
+```
+go.sh
+```
 ## CLODSH Readmemd 
 Version: 1.38
