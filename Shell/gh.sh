@@ -1,4 +1,4 @@
-#!/bash/bin
+#!/bin/bash
 
 # This script automatically installs github cli
 wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) 

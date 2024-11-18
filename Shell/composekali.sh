@@ -1,4 +1,4 @@
-#!/bash/bin
+#!/bin/bash
 
 # since kali linux already have curl installed, that means you dont need to install curl.
 

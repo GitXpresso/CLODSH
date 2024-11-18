@@ -1,4 +1,4 @@
-#!/bash/bin
+#!/bin/bash
 
 # Start the installation by ensuring that all the packages used by docker as dependencies are installed.
 sudo apt update && sudo apt -y full-upgrade
