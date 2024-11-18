@@ -1136,7 +1136,7 @@ docker compose down
 ```
 # Quick Start
 ## Step 1
-Moving the current directory your in to the "Shell" directory
+Moving the current directory that you are in to the "Shell" directory
 ```bash
 cd Shell
 ```
