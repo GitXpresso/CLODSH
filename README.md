@@ -14,6 +14,7 @@ The sh in docker sh stands for self hosted folders will be ready for you to run 
 - [Ungoogled Chromium](#Ungoogled-Chromium)
 - [Opera](#Opera) 
 - [Tor](#Tor)
+
 </details>
 
 <details><summary>Workspace</summary>
@@ -31,7 +32,7 @@ The sh in docker sh stands for self hosted folders will be ready for you to run 
 </details>
 
 <details><summary>Shell Installation Guides</summary>
-
+</details>
 <details><summary>Go</summary>
  
 - [Installing Go](#Installing-Go)
