@@ -7,3 +7,5 @@ git clone --depth 1 https://github.com/gogs/gogs.git gogs
 cd gogs
 # Compile the main program, dependencies will be downloaded at this step
 go build -o gogs
+# Run gogs
+./gogs web
