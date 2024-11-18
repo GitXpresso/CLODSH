@@ -1192,19 +1192,30 @@ docker compose down
 ```
 # Quick Start
 ## Step 1
+Moving the current directory your in to the "Shell" directory
+```bash
+cd Shell
+```
+## Step 2
 Make the file executable
 ```bash
 chmod u+x ./gogs.sh
 ```
+## Step 3
 Starting gogs.sh
 ```bash
 ./gogs.sh
 ```
-Dont have go installed them heres a tutorial, only has 2 steps
-## Step 1
+Dont have go installed them heres a tutorial, only has 3 steps
+## Step 2
 Make the file executable
 ```
-go.sh
+chmod u+x ./go.sh
+```
+## Step 3
+Run the bash file
+```
+./go.sh
 ```
 ## CLODSH Readmemd 
 Version: 1.38
