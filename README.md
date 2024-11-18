@@ -1150,7 +1150,11 @@ Starting gogs.sh
 ```bash
 ./gogs.sh
 ```
-Dont have go installed them heres a tutorial, only has 3 steps
+## Step 1
+Moving to the current directory that you are in to the "Shell" directory
+```bash
+cd Shell
+```
 ## Step 2
 Make the file executable
 ```
