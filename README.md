@@ -31,8 +31,13 @@ The sh in docker sh stands for self hosted folders will be ready for you to run 
 
 </details>
 
-<details><summary>Shell Installation Guides</summary>
- 
+<details><summary>Bash Shell Quick Start</summary>
+
+<details><summary>Gogs</summary>
+
+- [Installing Gogs](#Installing-Gogs)
+</details>
+
 <details><summary>Go</summary>
  
 - [Installing Go](#Installing-Go)
@@ -1147,6 +1152,7 @@ To remove the container do
 docker compose down
 ```
 # Quick Start
+# Installing Gogs
 ## Step 1
 Moving to the current directory that you are in to the "Shell" directory
 ```bash
