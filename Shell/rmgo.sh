@@ -1,4 +1,4 @@
-#!/usr/bash/bin
+#!/bin/bash
 
 # Command that find where go is located
 which go
