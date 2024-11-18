@@ -32,12 +32,12 @@ The sh in docker sh stands for self hosted folders will be ready for you to run 
 </details>
 
 <details><summary>Shell Installation Guides</summary>
-</details>
+ 
 <details><summary>Go</summary>
  
 - [Installing Go](#Installing-Go)
 - [Uninstalling Go](#Uninstalling-Go)
-
+ 
 </details>
 
 <details><summary>things that has nonthing to do with or about this repository</summary>
