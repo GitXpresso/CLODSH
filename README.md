@@ -26,7 +26,7 @@ The sh in docker sh stands for self hosted folders will be ready for you to run 
  
  - [How to Install Docker on Kali Linux](#How-to-Install-Docker-on-Kali-Linux)
  - [How to Install Docker Compose on Kali Linux](#How-to-Install-Docker-Compose-on-Kali-Linux)
- - [Docker Compose Guide](#Docker-Compose-Guide)
+ - [Docker Compose Commands](#Docker-Compose-Commands)
 
 </details>
 
@@ -1099,85 +1099,29 @@ Steps to upgrade Gogs with Docker:
 
 # How to Install Docker on Kali Linux
 ![Docker](https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png)
-## Step 1: Install Dependency packages
-Start the installation by ensuring that all the packages used by docker as dependencies are installed.
+
+## Step 2
+Make the file executable
 ```bash
-sudo apt update && sudo apt -y full-upgrade
-sudo apt install curl gnupg2 apt-transport-https software-properties-common ca-certificates
+chmod u+x dockerkali.sh
 ```
-## Check if a reboot is required after the upgrade:
-```
-[ -f /var/run/reboot-required ] && sudo reboot -f
-```
-## Step 2: Import Docker GPG key
-Import Docker GPG key used for signing Docker packages:
-```
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-archive-keyring.gpg
-```
-
-## Step 3: Add the Docker repository to Kali Linux
-Add Docker repository which contain the latest stable releases of Docker CE.
-
-```
-echo "deb [arch=amd64] https://download.docker.com/linux/debian bullseye stable" | sudo tee  /etc/apt/sources.list.d/docker.list
-```
-This command will add repository URL to /etc/apt/sources.list.d/docker.list.
-
-## Step 4: Install Docker on Kali Linux
-Update the apt package index.
-```
-sudo apt update
-```
-## Step 5
-To install Docker CE on Kali Linux, run the command:
- ```
-sudo apt install docker-ce docker-ce-cli containerd.io
-```
-Hit the y key to start installation of Docker on Kali Linux.
-
-## Step 6
-This installation will add docker group to the system without any users. Add your user account to the group to run docker commands as non-privileged user.
-```
-sudo usermod -aG docker $USER
-newgrp docker
-```
-## Step 7
-Check Docker version installed.
-```
-docker version
+## Step 3 
+Run the bash file
+```bash
+./dockerkali.sh
 ```
 # How to Install Docker Compose on Kali Linux
-## Step 1
-since kali linux already have curl installed, that means you dont need to install curl.
-```
-curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url  | grep docker-compose-linux-x86_64 | cut -d '"' -f 4 | wget -qi -
-```
 ## Step 2
-Make the binary file executable.
+Make the file executable
+```bash
+chmod u+x composekali.sh
 ```
-chmod +x docker-compose-linux-x86_64
+## Step 3
+Run the bash file
+```bash
+./composekali.sh
 ```
-## Part 3
-Move the file to your PATH.
-```
-sudo mv docker-compose-linux-x86_64 /usr/local/bin/docker-compose
-```
-## Part 4
-To know if you successfully install docker compose you need to confirm the version.
-```
-docker-compose version
-```
-The output should look this:
-
-`Docker Compose version v2.28.1` 
- 
-## Part 5
-Add user to docker group:
-```
-sudo usermod -aG docker $USER
-newgrp docker
-```
-# Docker Compose Guide
+# Docker Compose Commands
 To install and run the container do
 ```
 docker compose up
