@@ -3,9 +3,9 @@
 # Downloading Go
 wget https://golang.org/dl/go1.22.1.linux-amd64.tar.gz
 # Extracting Go
-sudo tar -C -xvf go1.22.1.linux-amd64.tar.gz
+sudo tar -xvzf go1.22.1.linux-amd64.tar.gz -C /opt
 # Moving Go to /usr/local
-sudo mv go /usr/local
+sudo mv /opt/go /usr/local
 # Adding Go to PATH
 export PATH=$PATH:/usr/local/go/bin
 # Checking Go version
