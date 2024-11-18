@@ -1226,12 +1226,12 @@ cd Shell
 ## Step 2
 Make the file executable
 ```bash
-chmod u+x ./uninstallgo.sh
+chmod u+x ./rmgo.sh
 ```
 Step 3
 Uninstalling Go
 ```bash
-./uninstallgo.sh
+./rmgo.sh
 ```
 ## CLODSH Readmemd 
 Version: 1.38
