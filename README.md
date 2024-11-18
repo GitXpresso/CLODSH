@@ -30,6 +30,15 @@ The sh in docker sh stands for self hosted folders will be ready for you to run 
 
 </details>
 
+<details><summary>Shell Installation Guides</summary>
+
+<details><summary>Go</summary>
+ 
+- [Installing Go](#Installing-Go)
+- [Uninstalling Go](#Uninstalling-Go)
+
+</details>
+
 <details><summary>things that has nonthing to do with or about this repository</summary>
  
 - [Visitor's Counter](#Visitors)
@@ -1150,6 +1159,7 @@ Starting gogs.sh
 ```bash
 ./gogs.sh
 ```
+# Installing Go
 ## Step 1
 Moving to the current directory that you are in to the "Shell" directory
 ```bash
