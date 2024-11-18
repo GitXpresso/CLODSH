@@ -1172,7 +1172,7 @@ Make the file executable
 ```bash
 chmod u+x ./rmgo.sh
 ```
-Step 3
+## Step 3
 Uninstalling Go
 ```bash
 ./rmgo.sh
