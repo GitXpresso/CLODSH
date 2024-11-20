@@ -4,6 +4,7 @@ services:
     # This MUST be stable for our documentation and
     # other automations.
     image: ghcr.io/coder/coder:${CODER_VERSION:-latest}
+    container_name: coder
     ports:
       - "7080:7080"
     environment:
