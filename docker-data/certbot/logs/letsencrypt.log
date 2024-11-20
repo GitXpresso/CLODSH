@@ -1,0 +1,131 @@
+2024-11-19 18:16:22,163:DEBUG:certbot._internal.main:certbot version: 3.0.1
+2024-11-19 18:16:22,163:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/local/bin/certbot
+2024-11-19 18:16:22,163:DEBUG:certbot._internal.main:Arguments: ['--standalone', '-d', 'outlook.office365.com']
+2024-11-19 18:16:22,163:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2024-11-19 18:16:22,172:DEBUG:certbot._internal.log:Root logging level set at 30
+2024-11-19 18:16:22,174:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2024-11-19 18:16:22,174:DEBUG:certbot._internal.plugins.selection:Single candidate plugin: * standalone
+Description: Runs an HTTP server locally which serves the necessary validation files under the /.well-known/acme-challenge/ request path. Suitable if there is no HTTP server already running. HTTP challenge only (wildcards not supported).
+Interfaces: Authenticator, Plugin
+Entry point: EntryPoint(name='standalone', value='certbot._internal.plugins.standalone:Authenticator', group='certbot.plugins')
+Initialized: <certbot._internal.plugins.standalone.Authenticator object at 0x7a3c454c33b0>
+Prep: True
+2024-11-19 18:16:22,175:DEBUG:certbot._internal.plugins.selection:Selected authenticator <certbot._internal.plugins.standalone.Authenticator object at 0x7a3c454c33b0> and installer None
+2024-11-19 18:16:22,175:INFO:certbot._internal.plugins.selection:Plugins selected: Authenticator standalone, Installer None
+2024-11-19 18:16:22,220:DEBUG:certbot._internal.main:Picked account: <Account(RegistrationResource(body=Registration(key=None, contact=(), agreement=None, status=None, terms_of_service_agreed=None, only_return_existing=None, external_account_binding=None), uri='https://acme-v02.api.letsencrypt.org/acme/acct/2066086047', new_authzr_uri=None, terms_of_service=None), 0d8c0c817953c48970ea73c8ea16e3e8, Meta(creation_dt=datetime.datetime(2024, 11, 19, 18, 15, 44, tzinfo=<UTC>), creation_host='e98e5511137f', register_to_eff='ktamashihacker@outlook.com'))>
+2024-11-19 18:16:22,221:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/directory.
+2024-11-19 18:16:22,222:DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): acme-v02.api.letsencrypt.org:443
+2024-11-19 18:16:22,381:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /directory HTTP/1.1" 200 746
+2024-11-19 18:16:22,381:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Date: Tue, 19 Nov 2024 18:16:22 GMT
+Content-Type: application/json
+Content-Length: 746
+Connection: keep-alive
+Cache-Control: public, max-age=0, no-cache
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+{
+  "enZxlTpzUlc": "https://community.letsencrypt.org/t/adding-random-entries-to-the-directory/33417",
+  "keyChange": "https://acme-v02.api.letsencrypt.org/acme/key-change",
+  "meta": {
+    "caaIdentities": [
+      "letsencrypt.org"
+    ],
+    "termsOfService": "https://letsencrypt.org/documents/LE-SA-v1.4-April-3-2024.pdf",
+    "website": "https://letsencrypt.org"
+  },
+  "newAccount": "https://acme-v02.api.letsencrypt.org/acme/new-acct",
+  "newNonce": "https://acme-v02.api.letsencrypt.org/acme/new-nonce",
+  "newOrder": "https://acme-v02.api.letsencrypt.org/acme/new-order",
+  "renewalInfo": "https://acme-v02.api.letsencrypt.org/draft-ietf-acme-ari-03/renewalInfo",
+  "revokeCert": "https://acme-v02.api.letsencrypt.org/acme/revoke-cert"
+}
+2024-11-19 18:16:22,382:DEBUG:certbot._internal.display.obj:Notifying user: Requesting a certificate for outlook.office365.com
+2024-11-19 18:16:22,387:DEBUG:acme.client:Requesting fresh nonce
+2024-11-19 18:16:22,387:DEBUG:acme.client:Sending HEAD request to https://acme-v02.api.letsencrypt.org/acme/new-nonce.
+2024-11-19 18:16:22,448:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "HEAD /acme/new-nonce HTTP/1.1" 200 0
+2024-11-19 18:16:22,449:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Date: Tue, 19 Nov 2024 18:16:22 GMT
+Connection: keep-alive
+Cache-Control: public, max-age=0, no-cache
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Replay-Nonce: JNlwFRqrHLUWrhCZmhYFW-0Km8Ww9oRuiS3ZNl6hwd3tmfh3pMs
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+
+2024-11-19 18:16:22,449:DEBUG:acme.client:Storing nonce: JNlwFRqrHLUWrhCZmhYFW-0Km8Ww9oRuiS3ZNl6hwd3tmfh3pMs
+2024-11-19 18:16:22,449:DEBUG:acme.client:JWS payload:
+b'{\n  "identifiers": [\n    {\n      "type": "dns",\n      "value": "outlook.office365.com"\n    }\n  ]\n}'
+2024-11-19 18:16:22,451:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/new-order:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAia2lkIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2FjY3QvMjA2NjA4NjA0NyIsICJub25jZSI6ICJKTmx3RlJxckhMVVdyaENabWhZRlctMEttOFd3OW9SdWlTM1pObDZod2QzdG1maDNwTXMiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL25ldy1vcmRlciJ9",
+  "signature": "FZawkt7g_Bq1oARS_DtX0KNsu2WQbbG4lwpXyjCnp4nzi1iSIIF7PT8CAa66cR6SLphOL-Enw2qjbFz2rwwyiuZBcRpJrPL3JWa3ehiXn2gbWIHhGuT1r_4kl8WCMd368oqt2w_VU35XQ1OImvx87YqdQyXOetKWEY_CHmXW7yOvvaBobP1M2oe_qCWIAjqBr6A6aRffLCWsjyZsupLpwLvdVxlOxjt71JMCBDSxjMEykV5pFY9fFU01B3GYY4Lu8u-tQ3CeFJKeFndUqNNTl0osWZrafZZpg88-OMX82JwK-lzvvnwtyTLr6g8K_qrSwbjYLqYur85F3nIsgWldHw",
+  "payload": "ewogICJpZGVudGlmaWVycyI6IFsKICAgIHsKICAgICAgInR5cGUiOiAiZG5zIiwKICAgICAgInZhbHVlIjogIm91dGxvb2sub2ZmaWNlMzY1LmNvbSIKICAgIH0KICBdCn0"
+}
+2024-11-19 18:16:22,528:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/new-order HTTP/1.1" 400 268
+2024-11-19 18:16:22,528:DEBUG:acme.client:Received response:
+HTTP 400
+Server: nginx
+Date: Tue, 19 Nov 2024 18:16:22 GMT
+Content-Type: application/problem+json
+Content-Length: 268
+Connection: keep-alive
+Boulder-Requester: 2066086047
+Cache-Control: public, max-age=0, no-cache
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Replay-Nonce: JNlwFRqr_EW5QQBkLP1ySMXM6Xhef7YdHbmz3SX9q1zLcAueGdQ
+
+{
+  "type": "urn:ietf:params:acme:error:rejectedIdentifier",
+  "detail": "Error creating new order :: Cannot issue for \"outlook.office365.com\": The ACME server refuses to issue a certificate for this domain name, because it is forbidden by policy",
+  "status": 400
+}
+2024-11-19 18:16:22,529:DEBUG:certbot._internal.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/usr/local/bin/certbot", line 33, in <module>
+    sys.exit(load_entry_point('certbot', 'console_scripts', 'certbot')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/certbot/certbot/main.py", line 19, in main
+    return internal_main.main(cli_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/certbot/certbot/_internal/main.py", line 1876, in main
+    return config.func(config, plugins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/certbot/certbot/_internal/main.py", line 1578, in certonly
+    lineage = _get_and_save_cert(le_client, config, domains, certname, lineage)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/certbot/certbot/_internal/main.py", line 142, in _get_and_save_cert
+    lineage = le_client.obtain_and_enroll_certificate(domains, certname)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/certbot/certbot/_internal/client.py", line 517, in obtain_and_enroll_certificate
+    cert, chain, key, _ = self.obtain_certificate(domains)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/certbot/certbot/_internal/client.py", line 428, in obtain_certificate
+    orderr = self._get_order_and_authorizations(csr.data, self.config.allow_subset_of_names)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/certbot/certbot/_internal/client.py", line 478, in _get_order_and_authorizations
+    orderr = self.acme.new_order(csr_pem)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/acme/acme/client.py", line 137, in new_order
+    response = self._post(self.directory['newOrder'], order)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/acme/acme/client.py", line 365, in _post
+    return self.net.post(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/acme/acme/client.py", line 738, in post
+    return self._post_once(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/acme/acme/client.py", line 751, in _post_once
+    response = self._check_response(response, content_type=content_type)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/src/acme/acme/client.py", line 602, in _check_response
+    raise messages.Error.from_json(jobj)
+acme.messages.Error: urn:ietf:params:acme:error:rejectedIdentifier :: The server will not issue certificates for the identifier :: Error creating new order :: Cannot issue for "outlook.office365.com": The ACME server refuses to issue a certificate for this domain name, because it is forbidden by policy
+2024-11-19 18:16:22,531:ERROR:certbot._internal.log:An unexpected error occurred:
+2024-11-19 18:16:22,531:ERROR:certbot._internal.log:Error creating new order :: Cannot issue for "outlook.office365.com": The ACME server refuses to issue a certificate for this domain name, because it is forbidden by policy
