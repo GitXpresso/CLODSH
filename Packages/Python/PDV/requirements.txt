@@ -1,0 +1,8 @@
+# PDV Means Python Data Visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+plotly==5.24.1
+bokeh==3.6.1
+altair==5.4.1
+pygal==3.0.5
+plotnine==0.14.2
