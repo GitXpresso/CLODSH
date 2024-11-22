@@ -2950,7 +2950,7 @@ pylru
 flask-testing
 pillow-avif-plugin
 pyminizip
-versioneer-
+versioneer
 scons
 importlib
 vertica-python
