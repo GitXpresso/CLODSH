@@ -7895,7 +7895,3 @@ theblues
 pyclamd
 boxes
 lolcat
-itertools
-os
-re
-sys
