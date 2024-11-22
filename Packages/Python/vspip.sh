@@ -1,5 +1,4 @@
 #!/bin/bash
-
 BWhite='\033[1;37m'  
 BPurple='\033[1;35m' 
 bold=$(tput bold)
@@ -26,9 +25,9 @@ echo -e "${BWhite}Updating and Upgrading"
 sudo apt update && sudo apt full-upgrade
 echo -e "${BWhite}Installing requirements"
 echo -e "${BWhite}Installing Mostly All of the PYPI Packages"
-cd ~/CLODSH/Packages/Python/PYPI
+cd /workspaces/CLODSH/Packages/Python/PYPI
 pip install -r requirements.txt
-cd ~/CLODSH
+cd /workspaces/CLODSH
 echo -e "${BWhite}did you get this if you did then put y if not put n"
 echo -e "${BPurple}note:${Color_Off}${bold}This error originates from a subprocess, and is likely not a problem with pip."
 echo -e "${BRed}error: ${Color_Off}${bold}metadata-generation-failed"
@@ -41,7 +40,3 @@ case $yn in
 	* ) echo invalid response;
 		exit 1;;
 esac
-echo -e " ${Purple}note:${Color_Off} This error originates from a subprocess, and is likely not a problem with pip."
-echo -e "${BRed}error: ${BBlack}metadata-generation-failed"
-pip install --upgrade pip setuptools wheel
-echo -e "${bold}do you have a workspace directory if not click y and you will be moved to the directory in your home directory"
