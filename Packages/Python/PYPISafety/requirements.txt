@@ -4,9 +4,9 @@ safety==3.2.11
 packaging==24.2
 parameterized==0.9.0
 safety-db==2021.7.17
-certifi >= 14.05.14
+c >= 14.05.14
 six==1.16.0
-python_dateutil==2.9.0.post0
+==2.9.0.post0
 setuptools==75.6.0
 urllib3== 2.2.3
-python-dotenv==1.0.1
+==1.0.1

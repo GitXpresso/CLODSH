@@ -1933,7 +1933,6 @@ tritonclient
 opentelemetry-propagator-aws-xray
 itemadapter
 gitdb
-safety
 python-xlib
 openlineage-integration-common
 unstructured
@@ -2317,6 +2316,10 @@ simple-ddl-parser
 imdbpy
 dpkt
 pipreqs
+piprot
+safety-db
+safety
+python_dateutil
 llama-index-multi-modal-llms-openai
 llama-index-program-openai
 python-iso
