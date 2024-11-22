@@ -7895,3 +7895,5 @@ theblues
 pyclamd
 boxes
 lolcat
+mkdocs
+mkdocs-materia
