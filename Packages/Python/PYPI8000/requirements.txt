@@ -391,7 +391,6 @@ uri-template
 ordered-set
 watchdog
 nltk
-rfc-validator
 wandb
 jupyter-events
 databricks-sql-connector
@@ -721,7 +720,6 @@ azure-mgmt-cognitiveservices
 azure-mgmt-applicationinsights
 levenshtein
 mysqlclient
-h
 hyperframe
 azure-mgmt-servicefabric
 apispec
@@ -770,8 +768,6 @@ opencensus-ext-azure
 grpcio-health-checking
 lightgbm
 cramjam
-boto
-psycopg
 eth-utils
 parse
 jpype
@@ -885,10 +881,7 @@ unicodecsv
 polars
 apache-airflow-providers-sqlite
 types-protobuf
-iso
-nvidia-cublas-cu
 pytest-rerunfailures
-nvidia-cudnn-cu
 sqlalchemy-spanner
 types-setuptools
 azure-servicebus
@@ -908,8 +901,6 @@ mmh
 torchaudio
 pyright
 azure-mgmt-datafactory
-nvidia-cuda-runtime-cu
-nvidia-cuda-nvrtc-cu
 slicer
 google-cloud-batch
 azure-kusto-data
@@ -927,12 +918,10 @@ fire
 apache-airflow-providers-slack
 cachelib
 keras-applications
-pypdf
 gradio
 logbook
 starkbank-ecdsa
 incremental
-pathlib
 cfn-flip
 uc-micro-py
 aws-sam-translator
@@ -962,7 +951,6 @@ xarray
 requests-ntlm
 geoip
 events
-psycopg-binary
 natsort
 ansible-core
 automat
@@ -978,7 +966,6 @@ azure-keyvault-certificates
 autopep
 wcmatch
 apache-airflow-providers-smtp
-h
 geographiclib
 statsd
 dbt-adapters
@@ -1144,7 +1131,6 @@ parse-type
 jax
 xlwt
 opentelemetry-instrumentation-wsgi
-cssselect
 functions-framework
 posthog
 meson-python
@@ -1316,7 +1302,6 @@ mypy-boto-lambda
 opentelemetry-instrumentation-urllib
 pyinstaller-hooks-contrib
 jsii
-opentelemetry-instrumentation-urllib
 enum-compat
 fastcore
 azureml-core
@@ -1605,7 +1590,6 @@ chispa
 tensorflow-datasets
 jaconv
 avro-gen
-markdown
 pbs-installer
 pyfakefs
 boolean-py
@@ -1683,7 +1667,6 @@ pynvml
 weasyprint
 mutagen
 anytree
-bumpversion
 multivolumefile
 justext
 pikepdf
@@ -1706,7 +1689,6 @@ pypdfium
 pkgconfig
 types-cffi
 prefect-aws
-pytimeparse
 subprocess-tee
 txaio
 gdown
@@ -1748,7 +1730,6 @@ launchdarkly-server-sdk
 natto-py
 flashtext
 coreapi
-fpdf
 multipart
 codeowners
 types-toml
@@ -1767,9 +1748,7 @@ pytest-playwright
 supervisor
 azure-monitor-opentelemetry
 pydispatcher
-databricks-pypi
 dj-database-url
-pep
 tableauhyperapi
 xformers
 backports-cached-property
@@ -1869,25 +1848,19 @@ country-converter
 zopfli
 mongoengine
 open-clip-torch
-nvidia-cusolver-cu
 backports-tempfile
 langgraph
 pytest-bdd
 qdldl
 ecos
 polib
-uuid
 aioresponses
-nvidia-cuda-cupti-cu
 mleap
-nvidia-cusparse-cu
 dbt-spark
 ntlm-auth
 dockerfile-parse
 python-crfsuite
 queuelib
-nvidia-cufft-cu
-nvidia-curand-cu
 google-analytics-data
 hdbcli
 requirements-parser
@@ -1897,7 +1870,6 @@ google-cloud-trace
 cohere
 types-tabulate
 exchangelib
-nvidia-nvtx-cu
 scrapy
 pylev
 numcodecs
@@ -1909,7 +1881,6 @@ pyluach
 idna-ssl
 sphinx-copybutton
 pyzipper
-nvidia-nccl-cu
 moviepy
 django-celery-results
 alive-progress
@@ -1932,11 +1903,9 @@ python-hcl
 tritonclient
 opentelemetry-propagator-aws-xray
 itemadapter
-gitdb
 python-xlib
 openlineage-integration-common
 unstructured
-rfc
 pytest-instafail
 about-time
 asana
@@ -1980,7 +1949,6 @@ urwid
 kornia-rs
 weaviate-client
 htmllib-modern
-nose
 dohq-artifactory
 bitstruct
 ydata-profiling
@@ -2167,7 +2135,6 @@ mypy-boto-kinesis
 types-pyserial
 aws-secretsmanager-caching
 apache-airflow-providers-jdbc
-polling
 jspy
 peppercorn
 dateformat
@@ -2178,7 +2145,6 @@ elastic-apm
 llama-index-readers-llama-parse
 langchain-experimental
 bzfile
-smmap
 typish
 types-simplejson
 mkdocs-autorefs
@@ -2263,7 +2229,6 @@ tcolorpy
 slotted
 shyaml
 triad
-retry
 flake-polyfill
 apache-airflow-providers-microsoft-azure
 pyvmomi
@@ -2302,7 +2267,6 @@ flametree
 python-string-utils
 python-codon-tables
 dnachisel
-rfc
 gcovr
 ebcdic
 typeid-python
@@ -2425,7 +2389,6 @@ sparkorm
 xarray-einstats
 model-bakery
 presto-python-client
-avro-gen
 recommonmark
 pytest-httpserver
 langchain-aws
@@ -2434,7 +2397,6 @@ opentelemetry-instrumentation-jinja
 usaddress
 radon
 core-universal
-elasticsearch
 github-py
 icdiff
 temporalio
@@ -2535,7 +2497,6 @@ vertexai
 safety-schemas
 llama-cloud
 retry-decorator
-pyqt
 pyspark-dist-explore
 crypto
 apache-airflow-providers-datadog
@@ -2543,7 +2504,6 @@ segment-analytics-python
 pytweening
 realtime
 docxtxt
-pyqt-qt
 imagecodecs
 argparse-addons
 astral
@@ -2603,7 +2563,6 @@ blessings
 dagster-aws
 gotrue
 pytest-dotenv
-zipfile
 tinydb
 schematics
 simpy
@@ -2642,7 +2601,6 @@ mypy-boto-dataexchange
 simplegeneric
 pymsgbox
 pytest-flask
-pyqt-sip
 tensorflowonspark
 cfile
 patool
@@ -2845,7 +2803,6 @@ pyside-addons
 zope-testbrowser
 pynput
 red-discordbot
-elasticsearch
 py-models-parser
 django-ses
 find-libpython
@@ -2953,7 +2910,6 @@ pylru
 flask-testing
 pillow-avif-plugin
 pyminizip
-versioneer
 scons
 importlib
 vertica-python
@@ -3005,7 +2961,6 @@ aiomysql
 pathtools
 antlr-tools
 pymannkendall
-cbor
 types-croniter
 outlines
 stomp-py
@@ -3193,7 +3148,6 @@ suds
 localstack-ext
 pylatexenc
 plaid-python
-sqlalchemy-stubs
 localstack
 pydriller
 zipfile-deflate
@@ -3288,7 +3242,6 @@ roundrobin
 html-tag-names
 html-void-elements
 python-cinderclient
-pybase
 munkres
 kaldiio
 sphinx-sitemap
@@ -3338,7 +3291,6 @@ monkeytype
 ssphere
 python-json-config
 azureml-train-restclients-hyperdrive
-python-logstash
 target-hotglue
 pydrive
 astpretty
@@ -3413,7 +3365,6 @@ fastapi-pagination
 tdda
 us
 psycogreen
-requests-ntlm
 python-benedict
 cartopy
 python-barcode
@@ -3498,7 +3449,6 @@ brickflows
 cma
 id
 jupyter-highlight-selected-word
-beautifulsoup
 xmldiff
 python-whois
 ipympl
@@ -3536,7 +3486,6 @@ xsdata
 pyxray
 python-graphql-client
 lomond
-aws-cdk-asset-node-proxy-agent-v
 flask-script
 cli-helpers
 morecantile
@@ -3609,7 +3558,6 @@ keras-tuner
 cdifflib
 gin-config
 modelscope
-progressbar
 sly
 localstack-client
 torch-geometric
@@ -3661,7 +3609,6 @@ kivy-garden
 meshio
 sphinx-data-viewer
 nagisa
-pyside
 chromedriver-autoinstaller
 fernet
 sigstore-rekor-types
@@ -3718,7 +3665,6 @@ oslo-log
 databricks-feature-engineering
 mailjet-rest
 quantities
-shiboken
 embedchain
 ordereddict
 django-axes
@@ -3792,7 +3738,6 @@ anywidget
 django-user-agents
 molecule-plugins
 delocate
-pydrive
 mypy-boto-sagemaker
 elasticsearch-curator
 scrapbook
@@ -3800,7 +3745,6 @@ django-tables
 django-auth-ldap
 lorem
 great-expectations-experimental
-nvidia-ml-py
 plyfile
 ml-collections
 opentelemetry-instrumentation-mysql
@@ -3828,7 +3772,6 @@ dynet
 pandas-flavor
 pylink-square
 mpld
-rfc
 pyftpdlib
 django-jazzmin
 nacos-sdk-python
@@ -3840,7 +3783,6 @@ table-logger
 sql-formatter
 aws-cdk-aws-iam
 mypy-boto-batch
-uuid
 opentelemetry-instrumentation-pyramid
 ibm-watsonx-ai
 llama-index-llms-azure-openai
@@ -3913,7 +3855,6 @@ mygeotab
 lagom
 robocorp-log
 pycarlo
-pyreadline
 webapp
 ragas
 pytools
@@ -3950,7 +3891,6 @@ pyshark
 django-guardian
 flask-executor
 opentelemetry-instrumentation-cassandra
-murmurhash
 recurring-ical-events
 robotframework-assertion-engine
 jiebak
@@ -4002,7 +3942,6 @@ ldaptor
 pythran
 pyxirr
 pyicu-binary
-elasticsearch
 snakeviz
 aws-cdk-aws-kms
 vispy
@@ -4045,7 +3984,6 @@ imap-tools
 apache-airflow-providers-apache-hive
 cssbeautifier
 wikipedia
-python-xlib
 couchbase
 pypd
 django-auditlog
@@ -4249,7 +4187,6 @@ anndata
 markdown-to-json
 httpx-ws
 ph-units
-flask-session
 oletools
 timeago
 opencensus-proto
@@ -4397,7 +4334,6 @@ rauth
 pytest-docker
 types-flask-cors
 gitignore-parser
-youqu
 opentelemetry-instrumentation-openai
 anyscale
 pickle
@@ -4421,7 +4357,6 @@ detect-delimiter
 inotify
 get-reader
 pytest-retry
-blosc
 trustme
 pulumi-command
 pyaml-env
@@ -4462,7 +4397,6 @@ presto-client
 launchable
 simpervisor
 docxcompose
-pymc
 cmake-format
 pytest-subprocess
 aws-cdk-aws-sqs
@@ -4521,13 +4455,11 @@ python-baseconv
 testrail-api
 aws-cdk-aws-logs-destinations
 aws-cdk-aws-ecr-assets
-iso
 bounded-pool-executor
 pythainlp
 pytorch
 pycosat
 iplocation
-xmltodict
 graphyte
 types-pkg-resources
 dvc-task
@@ -4721,7 +4653,6 @@ click-shell
 aws-cdk-aws-stepfunctions
 matpy
 pysnooper
-requests-unixsocket
 copier
 downloadkit
 langchainplus-sdk
@@ -5015,7 +4946,6 @@ google-cloud-common
 django-sekizai
 kedro-telemetry
 mike
-types-boto
 esp-idf-nvs-partition-gen
 xbbg
 django-solo
@@ -5192,7 +5122,6 @@ cdsapi
 airbyte
 healpix
 opentelemetry-instrumentation-aiohttp-server
-crispy-bootstrap
 local-attention
 flake-expression-complexity
 delegator
@@ -5291,7 +5220,6 @@ pinterest-generated-client
 mypy-boto-elb
 flask-bootstrap
 pinterest-api-sdk
-robotframework-seleniumlibrary
 urlobject
 mypy-boto-ram
 vllm-flash-attn
@@ -5385,7 +5313,6 @@ mypy-boto-comprehend
 napari-console
 google-cloud-notebooks
 htpasswd
-progressbar
 mypy-boto-redshift
 mypy-boto-timestream-write
 inference-gpu
@@ -5485,7 +5412,6 @@ async-asgi-testclient
 artifactory
 mssql-cli
 flake-cognitive-complexity
-opentelemetry-instrumentation-psycopg
 requests-credssp
 mypy-boto-directconnect
 mypy-boto-rekognition
@@ -5532,7 +5458,6 @@ mypy-boto-appconfigdata
 mypy-boto-dlm
 mypy-boto-wisdom
 mypy-boto-codestar-notifications
-cupy-cudax
 mypy-boto-waf-regional
 mypy-boto-iotfleetwise
 mypy-boto-workspaces-thin-client
@@ -5548,7 +5473,6 @@ mypy-boto-fsx
 cloudant
 mypy-boto-cloudhsm
 mypy-boto-workmailmessageflow
-elasticsearch
 yt
 mypy-boto-cognito-sync
 mypy-boto-mediastore
@@ -5578,7 +5502,6 @@ mypy-boto-sagemaker-featurestore-runtime
 mypy-boto-swf
 mypy-boto-chime
 mypy-boto-kinesis-video-media
-mypy-boto-inspector
 mypy-boto-kinesisanalyticsv
 mypy-boto-opensearchserverless
 mypy-boto-migrationhubstrategy
@@ -5648,7 +5571,6 @@ mypy-boto-greengrass
 mypy-boto-license-manager
 mypy-boto-iotfleethub
 mypy-boto-marketplacecommerceanalytics
-htmlmin
 mypy-boto-mediaconnect
 mypy-boto-servicecatalog-appregistry
 mypy-boto-omics
@@ -5825,7 +5747,6 @@ flake-html
 faust
 airflow-dbt-python
 rpmfile
-psycopg-pool
 mypy-boto-nimble
 google-oauth-tool
 pycparserext-gnuc
@@ -5864,7 +5785,6 @@ dukpy
 flake-json
 tbmodels
 lpc-checksum
-python-openid
 xinspect
 nvitop
 fastapi-cache
@@ -6041,7 +5961,6 @@ mergepythonclient
 pyuca
 pytest-logger
 pyobjc-framework-coredata
-python-ldap
 encodec
 python-louvain
 crewai-tools
@@ -6053,7 +5972,6 @@ pyobjc-framework-installerplugins
 postgres
 pyartifactory
 protoc-gen-validate
-pdoc
 twython
 pyobjc-framework-discrecording
 pyobjc-framework-coreaudiokit
@@ -6071,7 +5989,6 @@ intake
 apache-airflow-providers-apache-livy
 pyobjc-framework-corebluetooth
 pygitguardian
-mmhash
 pybind-global
 face-recognition
 meshtastic
@@ -6084,7 +6001,6 @@ syllapy
 loadimg
 async-interrupt
 pynliner
-flask-bootstrap
 cypari
 pyobjc-framework-security
 types-aiobotocore-acm
@@ -6248,7 +6164,6 @@ pyobjc-framework-netfs
 streamlit-faker
 pyobjc-framework-instantmessage
 pymobiledetect
-pep
 pyobjc-framework-coremediaio
 chainer
 pystac-client
@@ -6342,7 +6257,6 @@ meilisearch
 python-mecab-ko
 arelle-release
 pyobjc-framework-social
-ldap
 pyobjc-framework-inputmethodkit
 html-to-json
 pyobjc-framework-imagecapturecore
@@ -6446,12 +6360,10 @@ pylibsrtp
 sseclient
 django-pipeline
 django-utils-six
-django-bootstrap
 astro-sdk-python
 loralib
 pyros-genmsg
 aioconsole
-requests-ntlm
 streamlit-authenticator
 test-results-parser
 proxy-py
@@ -6513,7 +6425,6 @@ jump-consistent-hash
 markdown-include
 argparse-manpage
 text-generation
-django-bootstrap
 red-black-tree-mod
 dagster-azure
 airflow-code-editor
@@ -6521,7 +6432,6 @@ sahi
 tts
 osprofiler
 appdirs-stubs
-stix
 fifolock
 pydivert
 django-rosetta
@@ -6529,7 +6439,6 @@ json-ref-dict
 splinter
 prefect-slack
 seedir
-junit-xml
 pykafka
 django-activity-stream
 pytest-cpp
@@ -6587,7 +6496,6 @@ pytest-tornasync
 oslo-db
 cognite-sdk
 flex
-iso
 pwntools
 django-simple-captcha
 httpx-cache
@@ -6599,7 +6507,6 @@ maison
 python-irodsclient
 openapi-python-client
 django-safedelete
-pdfminer
 pyrad
 sparse-dot-topn
 unlzw
@@ -6627,7 +6534,6 @@ databricks-labs-blueprint
 aiogoogle
 phx-class-registry
 oslo-messaging
-ssh-python
 mlzlog
 onnxoptimizer
 airflow-mcd
@@ -6650,7 +6556,6 @@ libarchive
 sagemaker-containers
 bloom-filter
 ropgadget
-awkward
 llama-index-embeddings-ibm
 flask-pydantic
 geonamescache
@@ -6659,7 +6564,6 @@ wagon
 opentracing-utils
 django-sass-processor
 k-diffusion
-uproot
 uproot-methods
 oslo-service
 schema-salad
@@ -6794,9 +6698,7 @@ ansible-builder
 pystyle
 xdis
 daalpy
-fabric
 pyrender
-python-consul
 unix-ar
 pytest-insta
 google-cloud-retail
@@ -6904,7 +6806,6 @@ sphinxcontrib-apidoc
 stop-words
 mindsdb-sql
 cloudscale-sdk
-zodb
 aspy-refactor-imports
 hangul-romanize
 asdf
@@ -7007,7 +6908,6 @@ unsloth-zoo
 aws-sso-util
 qualname
 pykalman
-pyro
 deprecation-alias
 vessl
 fontawesome-markdown
@@ -7015,7 +6915,6 @@ python-gdcm
 dtreeviz
 edk-pytool-extensions
 mgzip
-pycld
 wavefront-sdk-python
 pystemmer
 dsnparse
@@ -7092,7 +6991,6 @@ alibabacloud-tea-openapi
 gruut-ipa
 flair
 aiohttp-session
-functools
 lazr-restfulclient
 tensorflow-cpu-aws
 gpk
@@ -7397,7 +7295,6 @@ py-dmidecode
 pytest-embedded-serial
 dictknife
 asdf-astropy
-mcap-ros-support
 types-pywin
 tlslite-ng
 browser-cookie
@@ -7697,7 +7594,6 @@ automaton
 deptry
 public
 edx-rest-api-client
-sagemaker-feature-store-pyspark
 butterfree
 fslpy
 scrapingbee
@@ -7721,7 +7617,6 @@ pylibiio
 trame-client
 django-deprecate-fields
 rasa-sdk
-pyasn
 normality
 pulumi-kubernetes
 caproto
@@ -7746,7 +7641,6 @@ mteb
 dashscope
 spyder
 unfoldnd
-pyj
 pyshacl
 sqlmesh
 pglast
@@ -7760,7 +7654,6 @@ aws-cdk-aws-s-notifications
 django-add-default-value
 pybufrkit
 tarsafe
-pyrfc
 huey
 metpy
 jsonable
@@ -7799,12 +7692,10 @@ hier-config
 py-vapid
 pip-review
 colcon-bash
-argparse
 tox-gh
 apache-airflow-providers-cloudant
 od
 colcon-cd
-django-ckeditor
 lunr
 rlpycairo
 ovh
@@ -7950,7 +7841,6 @@ pyxlsx
 flake-breakpoint
 django-weasyprint
 djangocms-admin-style
-crc
 hdrhistogram
 symmetry-representation
 giving
@@ -8003,3 +7893,5 @@ markyp-html
 pyadi-iio
 theblues
 pyclamd
+boxes
+lolcat
