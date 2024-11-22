@@ -1,3 +1,5 @@
+# Use sed to remove version info from your requirements.txt
+# sed 's/==.*$//' requirements.txt
 boto
 urllib
 botocore
