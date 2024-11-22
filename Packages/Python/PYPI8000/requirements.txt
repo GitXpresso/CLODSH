@@ -1,7 +1,7 @@
 # Use sed to remove version info from your requirements.txt
 # sed 's/==.*$//' requirements.txt
 boto
-urllib
+urllib3
 botocore
 requests
 aiobotocore
@@ -11,7 +11,7 @@ charset-normalizer
 setuptools
 typing-extensions
 python-dateutil
-stransfer
+transfer
 packaging
 sfs
 grpcio-status
@@ -4471,7 +4471,7 @@ knapsack-algorithm
 intuit-oauth
 aioquic
 mypy-boto-textract
-sagemaker-feature-store-pyspark--
+sagemaker-feature-store-pyspark
 baseio
 cpuset-py
 dynamo-pandas
@@ -5745,7 +5745,7 @@ mypy-boto-codecatalyst
 mypy-boto-apptest
 mypy-boto-license-manager-user-subscriptions
 mypy-boto-sagemaker-geospatial
-mypy-boto-resource-explorer-
+mypy-boto-resource-explorer
 mypy-boto-fms
 mypy-boto-privatenetworks
 mypy-boto-eks-auth
@@ -6526,7 +6526,7 @@ json-ref-dict
 splinter
 prefect-slack
 seedir
-junit-xml-
+junit-xml
 pykafka
 django-activity-stream
 pytest-cpp
@@ -6584,7 +6584,7 @@ pytest-tornasync
 oslo-db
 cognite-sdk
 flex
-iso-
+iso
 pwntools
 django-simple-captcha
 httpx-cache
@@ -6819,7 +6819,7 @@ pafy
 luaparser
 pgspecial
 dctorch
-mt-
+mt
 django-parler
 bnunicodenormalizer
 oslo-cache
@@ -7801,7 +7801,7 @@ tox-gh
 apache-airflow-providers-cloudant
 od
 colcon-cd
-django-ckeditor-
+django-ckeditor
 lunr
 rlpycairo
 ovh
