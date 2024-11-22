@@ -1,0 +1,9 @@
+# PSA means Python Statistical Analysis
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.14.1
+xgboost==2.1.2
+statsmodels==0.14.4
+yellowbrick==1.5
+arch==7.2.0
+dask-ml==2024.4.4
