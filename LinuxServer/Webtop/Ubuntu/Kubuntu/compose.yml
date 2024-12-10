@@ -1,6 +1,6 @@
 ---
 services:
-  Kubuntu-mate:
+  Kubuntu:
     image: lscr.io/linuxserver/webtop:ubuntu-kde
     container_name: kubuntu
     security_opt:
