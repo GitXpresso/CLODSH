@@ -1,8 +1,8 @@
 ---
 services:
-  Kubuntu-mate:
-    image: lscr.io/linuxserver/webtop:ubuntu-kde
-    container_name: kubuntu
+  AlpineXfce:
+    image: lscr.io/linuxserver/webtop:alpine:xfce
+    container_name: xfce
     security_opt:
       - seccomp:unconfined #optional
     environment:
@@ -10,7 +10,7 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
       - SUBFOLDER=/ #optional
-      - TITLE=Kubuntu  #optional
+      - TITLE=Alpine Xfce #optional
     volumes:
       - /path/to/data:/config
       - /var/run/docker.sock:/var/run/docker.sock #optional
