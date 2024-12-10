@@ -1,6 +1,6 @@
 ---
 services:
-  kubuntu:
+  ArchKde:
     image: lscr.io/linuxserver/webtop:arch-kde
     container_name: archkde
     security_opt:
