@@ -11,3 +11,7 @@ curl -fsSL https://cdn.coollabs.io/coolify/docker-compose.yml -o /data/coolify/s
 curl -fsSL https://cdn.coollabs.io/coolify/docker-compose.prod.yml -o /data/coolify/source/docker-compose.prod.yml
 curl -fsSL https://cdn.coollabs.io/coolify/.env.production -o /data/coolify/source/.env
 curl -fsSL https://cdn.coollabs.io/coolify/upgrade.sh -o /data/coolify/source/upgrade.sh
+
+
+chown -R 9999:root /data/coolify
+chmod -R 700 /data/coolify
