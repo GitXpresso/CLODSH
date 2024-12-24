@@ -5,6 +5,7 @@ echo "Updating Packages in order to successfully install kasmvnc"
 sudo apt update
 echo "Installing the newly added debian file"
 sudo apt install -y ./kasmvnc.deb
+sudo adduser $USER ssl-cert
 echo "Kasmvnc successfully installed"
 echo "put this "kasmvncserver" in your terminal to setup kasmvnc"
 echo "here is a link to help you with packsges that came with kasmvnc debian file, https://www.kasmweb.com/kasmvnc/docs/latest/serverside.html"
