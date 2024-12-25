@@ -1,0 +1,279 @@
+---
+
+#
+# Definitions for MediaInfo docker container.
+#
+# This file is used as data source to generate README.md and unRAID template files
+# from Jinja2 templates.
+#
+
+app:
+  id: 17
+  name: mediainfo
+  friendly_name: MediaInfo
+  gui_type: x11
+  base_os: alpine
+  project:
+    description: |-
+      MediaInfo is a convenient unified display of the most relevant technical and tag data for video and audio files.
+    url: https://mediaarea.net/en/MediaInfo
+  unraid:
+    support_url: https://forums.unraid.net/topic/75222-support-mediainfo/
+    category: "Tools:"
+  documentation:
+  changelog:
+    - version: 24.12.1
+      date: 2024-12-07
+      changes:
+        - 'Updated baseimage to version 4.6.7, which brings the following changes:'
+        - '2:Fixed web audio feature with URL path-based reverse proxy.'
+        - '2:Fixed TLS secure connection method for VNC that was preventing web access.'
+        - '2:Fixed CJK font installation.'
+        - '2:Rebuild against latest distro images to get security fixes.'
+    - version: 24.11.2
+      date: 2024-11-23
+      changes:
+        - 'Fixed MediaInfo not starting properly on some architectures.'
+    - version: 24.11.1
+      date: 2024-11-18
+      changes:
+        - 'Updated MediaInfo to version 24.11.'
+    - version: 24.09.1
+      date: 2024-09-29
+      changes:
+        - 'Updated baseimage to version 4.6.4, which brings the following changes:'
+        - '2:Fixed web authentication feature with URL path-based reverse proxy.'
+        - '2:Rebuild against latest distro images to get security fixes.'
+    - version: 24.08.1
+      date: 2024-08-04
+      changes:
+        - 'Fixed issue where toolbar icons were not displayed.'
+        - 'Fixed issue where dark mode was not working.'
+        - 'Use a monospaced font for better visibility of information.'
+    - version: 24.07.1
+      date: 2024-07-04
+      changes:
+        - 'Updated MediaInfo to version 24.06'
+        - 'Updated baseimage to version 4.6.3, which brings the following changes:'
+        - '2:Audio support through web browser.'
+        - '2:Web authentication support.'
+        - '2:Better support of GTK4 applications.'
+        - '2:Updated noVNC to version 1.5.0.'
+        - '2:Updated web UI components (Bootstrap, Font Awesome).'
+        - '2:When connecting, the control bar is now temporarily shown only once.'
+        - '2:During package mirror setup, make sure to keep permissions of copied files.'
+    - version: 24.06.1
+      date: 2024-06-09
+      changes:
+        - 'Updated MediaInfo to version 24.05.'
+    - version: 24.05.1
+      date: 2024-05-02
+      changes:
+        - 'Updated MediaInfo to version 24.04.'
+    - version: 24.04.1
+      date: 2024-04-01
+      changes:
+        - 'Updated MediaInfo to version 24.03.'
+    - version: 24.02.1
+      date: 2024-02-01
+      changes:
+        - 'Updated MediaInfo to version 24.01.'
+    - version: 24.01.1
+      date: 2024-01-23
+      changes:
+        - 'Updated baseimage to version 4.5.3, which brings the following changes:'
+        - '2:Disabled fullscreen support when page is loaded into an iFrame.'
+        - '2:Rebuilt against latest distro images to get security fixes.'
+    - version: 23.12.1
+      date: 2023-12-01
+      changes:
+        - 'Updated MediaInfo to version 23.11.'
+    - version: 23.11.2
+      date: 2023-11-19
+      changes:
+        - 'Updated baseimage to version 4.5.2, which brings the following changes:'
+        - '2:Fixed issue that would cause the helper that takes ownership of a directory to fail when using a very high user or group ID.'
+    - version: 23.11.1
+      date: 2023-11-10
+      changes:
+        - 'Updated baseimage to version 4.5.1, which brings the following changes:'
+        - '2:Mirror for packages installation can be set via the `PACKAGES_MIRROR` environment variable.'
+        - '2:Improved the way the `take-ownership` script is working.'
+        - '2:Readiness and minimum running time checks should not be done for a service defined with an interval.'
+        - '2:Raise an error when a synched service fails to start.'
+        - '2:Minimum running time check of a service was using an incorrect way to verify if process is still alive.'
+        - '2:Fixed installation of CJK font.'
+    - version: 23.10.1
+      date: 2023-10-04
+      changes:
+        - 'Updated MediaInfo to version 23.10.'
+    - version: 23.09.1
+      date: 2023-09-21
+      changes:
+        - 'Updated MediaInfo to version 23.09.'
+    - version: 23.07.1
+      date: 2023-07-15
+      changes:
+        - 'Updated MediaInfo to version 23.07.'
+    - version: 23.06.2
+      date: 2023-06-28
+      changes:
+        - 'Updated MediaInfo to version 23.06.'
+    - version: 23.06.1
+      date: 2023-06-08
+      changes:
+        - 'Updated baseimage to version 4.4.2, which brings the following changes:'
+        - '2:Rebuilt against latest distro images to get security fixes.'
+        - '2:Updated X server to version 1.20.14.'
+    - version: 23.04.2
+      date: 2023-04-29
+      changes:
+        - 'Updated MediaInfo to version 23.04.'
+        - 'Updated baseimage to version 4.4.1, which brings the following changes:'
+        - '2:Updated TigerVNC to version 1.13.1.'
+    - version: 23.04.1
+      date: 2023-04-05
+      changes:
+        - 'Updated ZenLib to version 0.4.41, which fixes a crash that could occur when opening video file.'
+    - version: 23.03.2
+      date: 2023-03-29
+      changes:
+        - 'Updated MediaInfo to version 23.03.'
+    - version: 23.03.1
+      date: 2023-03-05
+      changes:
+        - 'Updated baseimage to version 4.4.0, which brings the following changes:'
+        - '2:Updated components providing access to application''s UI over web.'
+        - '2:Improved web UI usage with touch devices.'
+        - '2:Fixed issue with initialization of Linux users and groups when the `GROUP_ID` is also part of `SUP_GROUP_IDS`.'
+        - '2:Limit the maximum number of opened files on system having a very large, unlimited value. This prevents unnecessary waste of CPU resources and time for applications trying to close all possible file descriptors.'
+    - version: 23.02.2
+      date: 2023-02-08
+      changes:
+        - 'Updated baseimage to version 4.3.4, which brings the following changes:'
+        - '2:Fixed error message from openbox about missing Fontconfig cache directory.'
+        - 'Do not use the OCI Docker image format yet to keep better compatibility (e.g with older docker clients).'
+    - version: 23.02.1
+      date: 2023-02-04
+      changes:
+        - 'Updated baseimage to version 4.3.3, which brings robustness related enhancements.'
+    - version: 23.01.1
+      date: 2023-01-04
+      changes:
+        - 'Update of the baseimage to version 4.3.1 brings the following changes:'
+        - '2:Control menu can be moved to the right side of the screen.'
+        - '2:Automatic focus of the clipboard text box when opening the control menu.'
+        - '2:Automatic close of the control menu when clicking into the application.'
+        - '2:Rotation of the internal web server log files.'
+    - version: 22.12.2
+      date: 2022-12-23
+      changes:
+        - 'Updated MediaInfo to version 22.12.'
+    - version: 22.12.1
+      date: 2022-12-11
+      changes:
+        - 'Updated baseimage to version `4.2.2`, which brings multiple internal enhancements.'
+    - version: 22.10.2
+      date: 2022-10-24
+      changes:
+        - 'Fixed dark mode not working.'
+        - 'Update of the baseimage to version 4.1.1 brings the following changes:'
+        - '2:Collapse the setting section of the control panel by default on touch devices to accommodate the size taken by the on-screen keyboard.'
+        - '2:Include the Docker image platform in informational box printed during container startup.'
+        - '2:A umask value of `0000` was not properly applied.'
+        - '2:Fixed issue where the window manager configuration may fail to load.'
+    - version: 22.10.1
+      date: 2022-10-14
+      changes:
+        - 'Versioning scheme of the Docker image changed to `YY.MM.SEQUENCE`.'
+        - 'Update of the baseimage to version 4.0.4 brings the following new features:'
+        - '2:Multi-arch image support.'
+        - '2:Support for dark mode.'
+        - '2:Support for remote window resize.'
+        - '2:Updated the web UI with a new, simplified and less intrusive look.'
+    - version: 1.11.0
+      date: 2022-10-09
+      changes:
+        - 'Updated MediaInfo to version 22.09.'
+    - version: 1.10.0
+      date: 2022-06-28
+      changes:
+        - 'Updated MediaInfo to version 22.06.'
+        - 'Now using baseimage version 3.5.8, based on Alpine Linux 3.14, which brings the following changes:'
+        - '2:Updated installed packages to get latest security fixes.'
+    - version: 1.9.0
+      date: 2022-04-05
+      changes:
+        - 'Updated MediaInfo to version 22.03.'
+    - version: 1.8.0
+      date: 2021-10-12
+      changes:
+        - 'Updated MediaInfo to version 21.09.'
+    - version: 1.7.1
+      date: 2021-04-13
+      changes:
+        - 'Now using baseimage version 3.5.7, which brings the following change:'
+        - '2:Updated installed packages to get latest security fixes.'
+    - version: 1.7.0
+      date: 2021-03-30
+      changes:
+        - 'Updated MediaInfo to version 21.03.'
+    - version: 1.6.1
+      date: 2021-01-01
+      changes:
+        - 'Fixed libmediainfo not being at the expected version.'
+    - version: 1.6.0
+      date: 2020-10-09
+      changes:
+        - 'Updated MediaInfo to version 20.09.'
+    - version: 1.5.0
+      date: 2020-09-10
+      changes:
+        - 'Upgraded MediaInfo to version 20.08.'
+        - 'Now using baseimage v3.5.6, based on Alpine 3.12, which brings the following changes:'
+        - '2:Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.'
+        - '2:Updated installed packages to get latest security fixes.'
+        - '2:Adjusted the log monitor target for recent versions of YAD.'
+    - version: 1.4.0
+      date: 2020-04-05
+      changes:
+        - 'Upgraded MediaInfo to version 20.03.'
+        - 'Now using baseimage v3.5.3, which brings the following changes:'
+        - '2:Updated installed packages to get latest security fixes.'
+        - '2:Make sure the tzdata is installed.'
+    - version: 1.3.0
+      date: 2019-09-11
+      changes:
+        - 'Upgraded MediaInfo to version 19.09.'
+    - version: 1.2.0
+      date: 2019-04-24
+      changes:
+        - 'Upgraded MediaInfo to version 19.04.'
+        - 'Now using baseimage v3.5.2, which brings the following changes:'
+        - '2:Updated installed packages to get latest security fixes.'
+        - '2:Fixed issue where the container could have a zombie process.'
+        - '2:Fixed issue where the password would not be submitted when pressing the enter key in the password modal.'
+        - '2:Use relative path for favicon ressources to be more friendly with reverse proxy senarios.'
+    - version: 1.1.0
+      date: 2018-12-12
+      changes:
+        - 'Upgraded MediaInfo to version 18.12.'
+    - version: 1.0.0
+      date: 2018-10-26
+      changes:
+        - 'Initial release.'
+
+container:
+  storage_permissions: ro
+
+  # Environment variables.
+  environment_variables: []
+
+  # Volumes
+  volumes: []
+
+  # Network ports
+  ports: []
+
+  # Devices
+  devices: []

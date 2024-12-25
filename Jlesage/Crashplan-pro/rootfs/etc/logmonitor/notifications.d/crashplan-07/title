@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "$APP_NAME failed to monitor path(s)."

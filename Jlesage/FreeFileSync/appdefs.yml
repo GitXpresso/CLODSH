@@ -1,0 +1,160 @@
+---
+
+#
+# Definitions for FreeFileSync docker container.
+#
+# This file is used as data source to generate README.md and unRAID template files
+# from Jinja2 templates.
+#
+
+app:
+  id: 23
+  name: freefilesync
+  friendly_name: FreeFileSync
+  gui_type: x11
+  base_os: alpine
+  project:
+    description: |-
+      FreeFileSync is a folder comparison and synchronization software that
+      creates and manages backup copies of all your important files. Instead
+      of copying every file every time, FreeFileSync determines the differences
+      between a source and a target folder and transfers only the minimum amount
+      of data needed.
+    url: https://freefilesync.org
+  unraid:
+    support_url: https://forums.unraid.net/topic/139295-support-freefilesync/
+    category: "Backup: Tools:"
+  documentation:
+    sections:
+      - title: Scheduled Batch Jobs
+        level: 2
+        content: |-
+          This container provides an easy way to run FreeFileSync batch jobs according to
+          a specified schedule.  One or more jobs can be configured via the following
+          environment variables:
+
+          - `FFS_SCHEDULED_BATCH_JOB_<ID>_NAME`: Name of the job.  Must match the file
+            name of the saved FreeFileSync synchronization configuration.
+          - `FFS_SCHEDULED_BATCH_JOB_<ID>_CRON`: Cron expression of the schedule.  See
+            https://crontab.guru to create a valid Cron expression.
+
+          Where `<ID>` is a numerical identifier of your choice.
+
+          First, the synchronization configuration must be setup in FreeFileSync.  Once
+          done, it has to be saved as a "batch Job", under `/config` inside the container.
+          The name of the file, without the `.ffs_batch` extension, must match the name of
+          the job set via the environment variable.
+
+          For example, if `FFS_SCHEDULED_JOB_1_NAME` is set to `MyBackup1`, the
+          FreeFileSync synchronization configuration should be saved to
+          `/config/MyBackup1.ffs_batch`.
+
+          **NOTE**: When saving a batch job, it is advised to enable the `Auto-close`
+          option.  Else, the job won't run again unless its window is manually closed.
+
+          **NOTE**: Make sure to first run the batch job from the UI to make sure there is
+          no issue with the job itself.
+  changelog:
+    - version: 24.12.1
+      date: 2024-12-07
+      changes:
+        - 'Updated FreeFileSync to version 13.9.'
+        - 'Updated baseimage to version 4.6.7, which brings the following changes:'
+        - '2:Fixed web audio feature with URL path-based reverse proxy.'
+        - '2:Fixed TLS secure connection method for VNC that was preventing web access.'
+        - '2:Fixed CJK font installation.'
+        - '2:Rebuild against latest distro images to get security fixes.'
+    - version: 24.09.1
+      date: 2024-09-29
+      changes:
+        - 'Updated baseimage to version 4.6.4, which brings the following changes:'
+        - '2:Fixed web authentication feature with URL path-based reverse proxy.'
+        - '2:Rebuild against latest distro images to get security fixes.'
+    - version: 24.07.1
+      date: 2024-07-03
+      changes:
+        - 'Updated FreeFileSync to version 13.7.'
+        - 'Updated baseimage to version 4.6.3, which brings the following changes:'
+        - '2:Audio support through web browser.'
+        - '2:Web authentication support.'
+        - '2:Better support of GTK4 applications.'
+        - '2:Updated noVNC to version 1.5.0.'
+        - '2:Updated web UI components (Bootstrap, Font Awesome).'
+        - '2:When connecting, the control bar is now temporarily shown only once.'
+        - '2:During package mirror setup, make sure to keep permissions of copied files.'
+    - version: 24.04.1
+      date: 2024-04-02
+      changes:
+        - 'Updated FreeFileSync to version 13.5.'
+    - version: 24.03.1
+      date: 2024-03-03
+      changes:
+        - 'Updated FreeFileSync to version 13.4.'
+    - version: 24.01.1
+      date: 2024-01-14
+      changes:
+        - 'Updated FreeFileSync to version 13.3.'
+        - 'Updated baseimage to version 4.5.3, which brings the following changes:'
+        - '2:Disabled fullscreen support when page is loaded into an iFrame.'
+        - '2:Rebuild against latest distro images to get security fixes.'
+    - version: 23.11.3
+      date: 2023-11-19
+      changes:
+        - 'Updated baseimage to version 4.5.2, which brings the following changes:'
+        - '2:Fixed issue that would cause the helper that takes ownership of a directory to fail when using a very high user or group ID.'
+    - version: 23.11.2
+      date: 2023-11-10
+      changes:
+        - 'Updated baseimage to version 4.5.1, which brings the following changes:'
+        - '2:Mirror for packages installation can be set via the `PACKAGES_MIRROR` environment variable.'
+        - '2:Improved the way the `take-ownership` script is working.'
+        - '2:Readiness and minimum running time checks should not be done for a service defined with an interval.'
+        - '2:Raise an error when a synched service fails to start.'
+        - '2:Minimum running time check of a service was using an incorrect way to verify if process is still alive.'
+        - '2:Fixed installation of CJK font.'
+    - version: 23.11.1
+      date: 2023-11-07
+      changes:
+        - 'Updated FreeFileSync to version 13.1.'
+    - version: 23.10.1
+      date: 2023-10-05
+      changes:
+        - 'Updated FreeFileSync to version 13.0.'
+    - version: 23.08.1
+      date: 2023-08-28
+      changes:
+        - 'Better support devices running older kernels by removing usage of `getentropy()`.'
+    - version: 23.07.1
+      date: 2023-07-28
+      changes:
+        - 'Updated FreeFileSync to version 12.5.'
+    - version: 23.06.1
+      date: 2023-06-22
+      changes:
+        - 'Updated FreeFileSync to version 12.4.'
+    - version: 23.05.2
+      date: 2023-05-19
+      changes:
+        - 'Updated FreeFileSync to version 12.3.'
+        - 'Updated baseimage to version 4.4.2, which brings the following changes:'
+        - '2:Rebuilt against latest distro images to get security fixes.'
+        - '2:Updated X server to version 1.20.14.'
+    - version: 23.05.1
+      date: 2024-05-15
+      changes:
+        - 'Initial release.'
+
+container:
+  storage_permissions: rw
+
+  # Environment variables.
+  environment_variables: []
+
+  # Volumes
+  volumes: []
+
+  # Network ports
+  ports: []
+
+  # Devices
+  devices: []

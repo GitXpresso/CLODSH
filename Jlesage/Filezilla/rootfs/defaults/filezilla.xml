@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FileZilla3 version="3.27.0.1" platform="*nix">
+	<Settings>
+		<Setting name="Default editor">2/usr/bin/filezilla_editor</Setting>
+		<Setting name="Always use default editor">1</Setting>
+		<Setting name="Config Location">/config/xdg/config/filezilla/</Setting>
+		<Setting name="Window position and size">1 0 0 1920 1080 </Setting>
+	</Settings>
+</FileZilla3>

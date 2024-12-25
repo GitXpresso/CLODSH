@@ -1,0 +1,224 @@
+---
+
+#
+# Definitions for PuTTY docker container.
+#
+# This file is used as data source to generate README.md and unRAID template files
+# from Jinja2 templates.
+#
+
+app:
+  id: 16
+  name: putty
+  friendly_name: PuTTY
+  gui_type: x11
+  base_os: alpine
+  project:
+    description: |-
+      PuTTY is a free and open-source terminal emulator, serial console and network file
+      transfer application. It supports several network protocols, including SCP, SSH,
+      Telnet, rlogin, and raw socket connection. It can also connect to a serial port.
+    url: https://www.putty.org
+  unraid:
+    support_url: https://forums.unraid.net/topic/73494-support-putty/
+    category: "Tools:"
+  documentation:
+  changelog:
+    - version: 24.12.1
+      date: 2024-12-07
+      changes:
+        - 'Updated baseimage to version 4.6.7, which brings the following changes:'
+        - '2:Fixed web audio feature with URL path-based reverse proxy.'
+        - '2:Fixed TLS secure connection method for VNC that was preventing web access.'
+        - '2:Fixed CJK font installation.'
+        - '2:Rebuild against latest distro images to get security fixes.'
+    - version: 24.11.2
+      date: 2024-11-27
+      changes:
+        - 'Updated PuTTY to version 0.82.'
+    - version: 24.11.1
+      date: 2024-11-19
+      changes:
+        - 'Fixed display issue that was occurring past the configuration window.'
+    - version: 24.09.1
+      date: 2024-09-29
+      changes:
+        - 'Updated baseimage to version 4.6.4, which brings the following changes:'
+        - '2:Fixed web authentication feature with URL path-based reverse proxy.'
+        - '2:Rebuild against latest distro images to get security fixes.'
+    - version: 24.08.1
+      date: 2024-08-20
+      changes:
+        - 'Fixed terminal window not being maximized.'
+    - version: 24.07.1
+      date: 2024-07-04
+      changes:
+        - 'Updated baseimage to version 4.6.3, which brings the following changes:'
+        - '2:Audio support through web browser.'
+        - '2:Web authentication support.'
+        - '2:Better support of GTK4 applications.'
+        - '2:Updated noVNC to version 1.5.0.'
+        - '2:Updated web UI components (Bootstrap, Font Awesome).'
+        - '2:When connecting, the control bar is now temporarily shown only once.'
+        - '2:During package mirror setup, make sure to keep permissions of copied files.'
+    - version: 24.04.1
+      date: 2024-04-15
+      changes:
+        - 'Updated PuTTY to version 0.81.'
+    - version: 24.01.1
+      date: 2024-01-25
+      changes:
+        - 'Updated baseimage to version 4.5.3, which brings the following changes:'
+        - '2:Disabled fullscreen support when page is loaded into an iFrame.'
+        - '2:Rebuilt against latest distro images to get security fixes.'
+    - version: 23.12.1
+      date: 2023-12-18
+      changes:
+        - 'Updated PuTTY to version 0.80.'
+    - version: 23.11.2
+      date: 2023-11-19
+      changes:
+        - 'Updated baseimage to version 4.5.2, which brings the following changes:'
+        - '2:Fixed issue that would cause the helper that takes ownership of a directory to fail when using a very high user or group ID.'
+    - version: 23.11.1
+      date: 2023-11-10
+      changes:
+        - 'Updated baseimage to version 4.5.1, which brings the following changes:'
+        - '2:Mirror for packages installation can be set via the `PACKAGES_MIRROR` environment variable.'
+        - '2:Improved the way the `take-ownership` script is working.'
+        - '2:Readiness and minimum running time checks should not be done for a service defined with an interval.'
+        - '2:Raise an error when a synched service fails to start.'
+        - '2:Minimum running time check of a service was using an incorrect way to verify if process is still alive.'
+        - '2:Fixed installation of CJK font.'
+    - version: 23.08.1
+      date: 2023-08-26
+      changes:
+        - 'Updated PuTTY to version 0.79.'
+        - 'Now using Alpine 3.18 baseimage.'
+    - version: 23.06.1
+      date: 2023-06-08
+      changes:
+        - 'Updated baseimage to version 4.4.2, which brings the following changes:'
+        - '2:Rebuilt against latest distro images to get security fixes.'
+        - '2:Updated X server to version 1.20.14.'
+    - version: 23.04.1
+      date: 2023-04-30
+      changes:
+        - 'Updated baseimage to version 4.4.1, which brings the following changes:'
+        - '2:Updated TigerVNC to version 1.13.1.'
+    - version: 23.03.1
+      date: 2023-03-05
+      changes:
+        - 'Updated baseimage to version 4.4.0, which brings the following changes:'
+        - '2:Updated components providing access to application''s UI over web.'
+        - '2:Improved web UI usage with touch devices.'
+        - '2:Fixed issue with initialization of Linux users and groups when the `GROUP_ID` is also part of `SUP_GROUP_IDS`.'
+        - '2:Limit the maximum number of opened files on system having a very large, unlimited value. This prevents unnecessary waste of CPU resources and time for applications trying to close all possible file descriptors.'
+    - version: 23.02.2
+      date: 2023-02-08
+      changes:
+        - 'Updated baseimage to version 4.3.4, which brings the following changes:'
+        - '2:Fixed error message from openbox about missing Fontconfig cache directory.'
+        - 'Do not use the OCI Docker image format yet to keep better compatibility (e.g with older docker clients).'
+    - version: 23.02.1
+      date: 2023-02-04
+      changes:
+        - 'Updated baseimage to version 4.3.3, which brings robustness related enhancements.'
+    - version: 23.01.1
+      date: 2023-01-04
+      changes:
+        - 'Update of the baseimage to version 4.3.1 brings the following changes:'
+        - '2:Control menu can be moved to the right side of the screen.'
+        - '2:Automatic focus of the clipboard text box when opening the control menu.'
+        - '2:Automatic close of the control menu when clicking into the application.'
+        - '2:Rotation of the internal web server log files.'
+    - version: 22.11.1
+      date: 2022-11-08
+      changes:
+        - 'Updated PuTTY to version 0.78.'
+        - 'Better integration of the `Restart PuTTY session` button.'
+        - 'Versioning scheme of the Docker image changed to `YY.MM.SEQUENCE`.'
+        - 'Update of the baseimage to version 4.1.5 brings the following new features:'
+        - '2:Multi-arch image support.'
+        - '2:Support for dark mode.'
+        - '2:Support for remote window resize.'
+        - '2:Updated the web UI with a new, simplified and less intrusive look.'
+    - version: 1.4.0
+      date: 2022-05-30
+      changes:
+        - 'Updated PuTTY to version 0.77.'
+    - version: 1.3.1
+      date: 2022-02-10
+      changes:
+        - 'Fixed missing icons in settings window.'
+        - 'Now using baseimage version 3.5.8, based on Alpine 3.14, which brings the following change:'
+        - '2:Updated installed packages to get latest security fixes.'
+    - version: 1.3.0
+      date: 2021-07-17
+      changes:
+        - 'Updated PuTTY to version 0.76.'
+    - version: 1.2.0
+      date: 2021-05-10
+      changes:
+        - 'Updated PuTTY to version 0.75.'
+    - version: 1.1.1
+      date: 2021-04-13
+      changes:
+        - 'Now using baseimage version 3.5.7, which brings the following change:'
+        - '2:Updated installed packages to get latest security fixes.'
+    - version: 1.1.0
+      date: 2021-01-04
+      changes:
+        - 'Added dialog window to easily restart the PuTTY session.'
+        - 'Updated baseimage to version 3.5.6, which brings the following changes:'
+        - '2:Other small adjustments for the YAD log monitor target.'
+    - version: 1.0.5
+      date: 2020-07-19
+      changes:
+        - 'Upgraded PuTTY to version 0.74.'
+        - 'Now using baseimage v3.5.5, based on Alpine 3.12, which brings the following changes:'
+        - '2:Upgraded glibc to version 2.31 on Alpine Linux images with glibc integrated.'
+        - '2:Updated installed packages to get latest security fixes.'
+        - '2:Adjusted the log monitor target for recent versions of YAD.'
+    - version: 1.0.4
+      date: 2019-09-30
+      changes:
+        - 'Upgraded PuTTY to version 0.73.'
+    - version: 1.0.3
+      date: 2019-08-12
+      changes:
+        - 'Upgraded PuTTY to version 0.72.'
+    - version: 1.0.2
+      date: 2019-04-25
+      changes:
+        - 'Upgraded PuTTY to version 0.71.'
+        - 'Now using baseimage v3.5.2, which brings the following changes:'
+        - '2:Updated installed packages to get latest security fixes.'
+        - '2:Fixed issue where the container could have a zombie process.'
+        - '2:Fixed issue where the password would not be submitted when pressing the enter key in the password modal.'
+        - '2:Use relative path for favicon ressources to be more friendly with reverse proxy senarios.'
+    - version: 1.0.1
+      date: 2018-09-18
+      changes:
+        - 'Now using baseimage v3.5.1, which brings the following changes:'
+        - '2:Updated installed packages to get latest security fixes.'
+    - version: 1.0.0
+      date: 2018-08-15
+      changes:
+        - 'Initial release.'
+
+container:
+  unsupported_volume:
+    - /storage
+
+  # Environment variables.
+  environment_variables: []
+
+  # Volumes
+  volumes: []
+
+  # Network ports
+  ports: []
+
+  # Devices
+  devices: []

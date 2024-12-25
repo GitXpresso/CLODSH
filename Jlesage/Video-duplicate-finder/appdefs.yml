@@ -1,0 +1,142 @@
+---
+
+#
+# Definitions for Video Duplicate Finder docker container.
+#
+# This file is used as data source to generate README.md and unRAID template files
+# from Jinja2 templates.
+#
+
+app:
+  id: 20
+  name: video-duplicate-finder
+  friendly_name: Video Duplicate Finder
+  gui_type: x11
+  base_os: alpine
+  project:
+    description: |-
+      Video Duplicate Finder is a cross-platform software to find duplicated video (and
+      image) files on hard disk based on similiarity.  That means unlike other duplicate
+      finders, this one does also finds duplicates which have a different resolution,
+      frame rate and even watermarked.
+    url: https://github.com/0x90d/videoduplicatefinder
+  unraid:
+    support_url: https://forums.unraid.net/topic/134636-support-video-duplicate-finder/
+    category: "MediaApp:Video"
+  documentation:
+  changelog:
+    - version: 24.12.1
+      date: 2024-12-07
+      changes:
+        - 'Updated baseimage to version 4.6.7, which brings the following changes:'
+        - '2:Fixed web audio feature with URL path-based reverse proxy.'
+        - '2:Fixed TLS secure connection method for VNC that was preventing web access.'
+        - '2:Fixed CJK font installation.'
+        - '2:Rebuild against latest distro images to get security fixes.'
+    - version: 24.09.1
+      date: 2024-09-29
+      changes:
+        - 'Updated Video Duplicate Finder to version 3.0.x-018ad52.'
+        - 'Updated baseimage to version 4.6.4, which brings the following changes:'
+        - '2:Fixed web authentication feature with URL path-based reverse proxy.'
+        - '2:Rebuild against latest distro images to get security fixes.'
+    - version: 24.07.1
+      date: 2024-07-03
+      changes:
+        - 'Updated Video Duplicate Finder to version 3.0.x-f21ddfd.'
+        - 'Updated baseimage to version 4.6.3, which brings the following changes:'
+        - '2:Audio support through web browser.'
+        - '2:Web authentication support.'
+        - '2:Better support of GTK4 applications.'
+        - '2:Updated noVNC to version 1.5.0.'
+        - '2:Updated web UI components (Bootstrap, Font Awesome).'
+        - '2:When connecting, the control bar is now temporarily shown only once.'
+        - '2:During package mirror setup, make sure to keep permissions of copied files.'
+    - version: 24.06.1
+      date: 2024-06-09
+      changes:
+        - 'Updated Video Duplicate Finder to version 3.0.x-1d93ac0.'
+    - version: 24.01.1
+      date: 2024-01-20
+      changes:
+        - 'Updated Video Duplicate Finder to version 3.0.x-5d64ab2.'
+        - 'Updated baseimage to version 4.5.3, which brings the following changes:'
+        - '2:Disabled fullscreen support when page is loaded into an iFrame.'
+        - '2:Rebuilt against latest distro images to get security fixes.'
+    - version: 23.11.2
+      date: 2023-11-19
+      changes:
+        - 'Updated baseimage to version 4.5.2, which brings the following changes:'
+        - '2:Fixed issue that would cause the helper that takes ownership of a directory to fail when using a very high user or group ID.'
+    - version: 23.11.1
+      date: 2023-11-10
+      changes:
+        - 'Updated baseimage to version 4.5.1, which brings the following changes:'
+        - '2:Mirror for packages installation can be set via the `PACKAGES_MIRROR` environment variable.'
+        - '2:Improved the way the `take-ownership` script is working.'
+        - '2:Readiness and minimum running time checks should not be done for a service defined with an interval.'
+        - '2:Raise an error when a synched service fails to start.'
+        - '2:Minimum running time check of a service was using an incorrect way to verify if process is still alive.'
+        - '2:Fixed installation of CJK font.'
+    - version: 23.08.1
+      date: 2023-08-13
+      changes:
+        - 'Updated Video Duplicate Finder to version 3.0.x-424e8c6.'
+        - 'Fixed usage of native FFmpeg llibraries.'
+    - version: 23.05.1
+      date: 2023-05-27
+      changes:
+        - 'Updated Video Duplicate Finder to version 3.0.x-c7908e7.'
+        - 'Updated baseimage to version 4.4.2, which brings the following changes:'
+        - '2:Rebuilt against latest distro images to get security fixes.'
+        - '2:Updated X server to version 1.20.14.'
+    - version: 23.04.1
+      date: 2023-04-30
+      changes:
+        - 'Updated baseimage to version 4.4.1, which brings the following changes:'
+        - '2:Updated TigerVNC to version 1.13.1.'
+    - version: 23.03.2
+      date: 2023-03-25
+      changes:
+        - 'Updated Video Duplicate Finder to version 3.0.x-a8660f6.'
+    - version: 23.03.1
+      date: 2023-03-05
+      changes:
+        - 'Updated baseimage to version 4.4.0, which brings the following changes:'
+        - '2:Updated components providing access to application''s UI over web.'
+        - '2:Improved web UI usage with touch devices.'
+        - '2:Fixed issue with initialization of Linux users and groups when the `GROUP_ID` is also part of `SUP_GROUP_IDS`.'
+    - version: 23.02.4
+      date: 2023-02-25
+      changes:
+        - 'Updated Video Duplicate Finder to version 3.0.x-625a85f.'
+        - 'Updated baseimage to version 4.3.6, which brings robustness related enhancements.'
+    - version: 23.02.3
+      date: 2023-02-12
+      changes:
+        - 'Updated Video Duplicate Finder to version 3.0.x-73d33ed.'
+    - version: 23.02.2
+      date: 2023-02-08
+      changes:
+        - 'Updated baseimage to version 4.3.4, which brings the following changes:'
+        - '2:Fixed error message from openbox about missing Fontconfig cache directory.'
+        - 'Do not use the OCI Docker image format yet to keep better compatibility (e.g with older docker clients).'
+    - version: 23.02.1
+      date: 2023-02-04
+      changes:
+        - 'Initial release.'
+
+container:
+  storage_permissions: rw
+
+  # Environment variables.
+  environment_variables: []
+
+  # Volumes
+  volumes: []
+
+  # Network ports
+  ports: []
+
+  # Devices
+  devices: []

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e # Exit immediately if a command exits with a non-zero status.
+set -u # Treat unset variables as an error.
+
+# Workaround for https://github.com/jlesage/docker-crashplan-pro/issues/341
+rm -rf /config/log/native/logs
+
+exec /usr/local/crashplan/bin/startCrashPlanEngine.sh >> /config/log/engine_output.log 2>> /config/log/engine_error.log
+
+# vim:ft=sh:ts=4:sw=4:et:sts=4

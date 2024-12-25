@@ -1,0 +1,222 @@
+---
+
+#
+# Definitions for Czkawka docker container.
+#
+# This file is used as data source to generate README.md and unRAID template files
+# from Jinja2 templates.
+#
+
+app:
+  id: 21
+  name: czkawka
+  friendly_name: Czkawka
+  gui_type: x11
+  base_os: alpine
+  project:
+    description: |-
+      Czkawka is written in Rust, simple, fast and easy to use app to remove
+      unnecessary files from your computer.
+    url: https://github.com/qarmin/czkawka
+  unraid:
+    support_url: https://forums.unraid.net/topic/101459-support-czkawka/
+    category: "Tools:"
+  documentation:
+  changelog:
+    - version: 24.12.1
+      date: 2024-12-07
+      changes:
+        - 'Updated baseimage to version 4.6.7, which brings the following changes:'
+        - '2:Fixed web audio feature with URL path-based reverse proxy.'
+        - '2:Fixed TLS secure connection method for VNC that was preventing web access.'
+        - '2:Fixed CJK font installation.'
+        - '2:Rebuild against latest distro images to get security fixes.'
+    - version: 24.10.1
+      date: 2024-10-18
+      changes:
+        - 'Updated Czkawka to version 8.0.0.'
+    - version: 24.09.1
+      date: 2024-09-29
+      changes:
+        - 'Updated baseimage to version 4.6.4, which brings the following changes:'
+        - '2:Fixed web authentication feature with URL path-based reverse proxy.'
+        - '2:Rebuild against latest distro images to get security fixes.'
+    - version: 24.07.1
+      date: 2024-07-03
+      changes:
+        - 'Updated baseimage to version 4.6.3, which brings the following changes:'
+        - '2:Audio support through web browser.'
+        - '2:Web authentication support.'
+        - '2:Better support of GTK4 applications.'
+        - '2:Updated noVNC to version 1.5.0.'
+        - '2:Updated web UI components (Bootstrap, Font Awesome).'
+        - '2:When connecting, the control bar is now temporarily shown only once.'
+        - '2:During package mirror setup, make sure to keep permissions of copied files.'
+    - version: 24.05.1
+      date: 2024-05-02
+      changes:
+        - 'Fixed issue where videos were not playing.'
+    - version: 24.04.1
+      date: 2024-04-04
+      changes:
+        - 'Updated Czkawka to version 7.0.0.'
+    - version: 24.02.1
+      date: 2024-02-18
+      changes:
+        - 'Updated baseimage to version 4.5.3, which brings the following changes:'
+        - '2:Disabled fullscreen support when page is loaded into an iFrame.'
+        - '2:Rebuilt against latest distro images to get security fixes.'
+    - version: 23.11.2
+      date: 2023-11-19
+      changes:
+        - 'Updated baseimage to version 4.5.2, which brings the following changes:'
+        - '2:Fixed issue that would cause the helper that takes ownership of a directory to fail when using a very high user or group ID.'
+    - version: 23.11.1
+      date: 2023-11-10
+      changes:
+        - 'Updated baseimage to version 4.5.1, which brings the following changes:'
+        - '2:Mirror for packages installation can be set via the `PACKAGES_MIRROR` environment variable.'
+        - '2:Improved the way the `take-ownership` script is working.'
+        - '2:Readiness and minimum running time checks should not be done for a service defined with an interval.'
+        - '2:Raise an error when a synched service fails to start.'
+        - '2:Minimum running time check of a service was using an incorrect way to verify if process is still alive.'
+        - '2:Fixed installation of CJK font.'
+    - version: 23.10.1
+      date: 2023-10-16
+      changes:
+        - 'Updated Czkawka to version 6.1.0.'
+    - version: 23.09.1
+      date: 2023-09-07
+      changes:
+        - 'Added support to open video files.'
+    - version: 23.06.2
+      date: 2023-06-12
+      changes:
+        - 'Updated Czkawka to version 6.0.0.'
+    - version: 23.06.1
+      date: 2023-06-07
+      changes:
+        - 'Updated baseimage to version 4.4.2, which brings the following changes:'
+        - '2:Rebuilt against latest distro images to get security fixes.'
+        - '2:Updated X server to version 1.20.14.'
+    - version: 23.04.1
+      date: 2023-04-29
+      changes:
+        - 'Removed warning log message from GTK.'
+        - 'Updated baseimage to version 4.4.1, which brings the following changes:'
+        - '2:Updated TigerVNC to version 1.13.1.'
+    - version: 23.03.1
+      date: 2023-03-05
+      changes:
+        - 'Updated baseimage to version 4.4.0, which brings the following changes:'
+        - '2:Updated components providing access to application''s UI over web.'
+        - '2:Improved web UI usage with touch devices.'
+        - '2:Fixed issue with initialization of Linux users and groups when the `GROUP_ID` is also part of `SUP_GROUP_IDS`.'
+    - version: 23.02.3
+      date: 2023-02-20
+      changes:
+        - 'Updated Czkawka to version 5.1.0.'
+        - 'Updated baseimage to version 4.3.6, which brings robustness related enhancements.'
+    - version: 23.02.2
+      date: 2023-02-08
+      changes:
+        - 'Updated baseimage to version 4.3.4, which brings the following changes:'
+        - '2:Fixed error message from openbox about missing Fontconfig cache directory.'
+        - 'Do not use the OCI Docker image format yet to keep better compatibility (e.g with older docker clients).'
+    - version: 23.02.1
+      date: 2023-02-04
+      changes:
+        - 'Updated baseimage to version 4.3.3, which brings robustness related enhancements.'
+    - version: 23.01.1
+      date: 2023-01-04
+      changes:
+        - 'Update of the baseimage to version 4.3.1 brings the following changes:'
+        - '2:Control menu can be moved to the right side of the screen.'
+        - '2:Automatic focus of the clipboard text box when opening the control menu.'
+        - '2:Automatic close of the control menu when clicking into the application.'
+        - '2:Rotation of the internal web server log files.'
+    - version: 22.12.2
+      date: 2022-12-11
+      changes:
+        - 'Implemented workaround for issue seen with Synology devices where container would not start after an image update.  The problem is caused by Synology explicitly setting all environment variables and keeping values from the old version.'
+    - version: 22.12.1
+      date: 2022-12-01
+      changes:
+        - 'Restored FFmpeg that was inadvertently removed.'
+    - version: 22.11.2
+      date: 2022-11-30
+      changes:
+        - 'Fixed saving of results to file.'
+        - 'Disabled trash functionality: current implementation is not adapted for container environment.'
+        - 'Fixed issue where permissions of `/tmp` were incorrect on some systems.'
+        - 'Updated baseimage to version `4.2.0`, which brings multiple internal enhancements.'
+    - version: 22.11.1
+      date: 2022-11-19
+      changes:
+        - 'Updated Czkawka to version 5.0.2.'
+        - 'Versioning scheme of the Docker image changed to `YY.MM.SEQUENCE`.'
+        - 'Update of the baseimage to version 4.1.5 brings the following new features:'
+        - '2:Multi-arch image support.'
+        - '2:Support for dark mode.'
+        - '2:Support for remote window resize.'
+        - '2:Updated the web UI with a new, simplified and less intrusive look.'
+    - version: 1.7.0
+      date: 2022-04-24
+      changes:
+        - 'Updated Czkawka to version 4.1.0.'
+        - 'Now using baseimage version 3.5.8, based on Alpine 3.15, which brings the following change:'
+        - '2:Updated installed packages to get latest security fixes.'
+    - version: 1.6.1
+      date: 2022-01-22
+      changes:
+        - 'Added FFmpeg, needed to find similar videos.'
+        - 'Fixed some icons not being displayed correctly.'
+    - version: 1.6.0
+      date: 2022-01-21
+      changes:
+        - 'Updated Czkawka to version 4.0.0.'
+    - version: 1.5.0
+      date: 2021-11-23
+      changes:
+        - 'Updated Czkawka to version 3.3.1.'
+    - version: 1.4.0
+      date: 2021-05-10
+      changes:
+        - 'Updated Czkawka to version 3.1.0.'
+    - version: 1.3.1
+      date: 2021-04-13
+      changes:
+        - 'Now using baseimage version 3.5.7, which brings the following change:'
+        - '2:Updated installed packages to get latest security fixes.'
+    - version: 1.3.0
+      date: 2021-03-13
+      changes:
+        - 'Updated Czkawka to version 3.0.0.'
+    - version: 1.2.0
+      date: 2021-02-22
+      changes:
+        - 'Updated Czkawka to version 2.4.0.'
+    - version: 1.1.0
+      date: 2021-01-26
+      changes:
+        - 'Updated Czkawka to version 2.3.2.'
+        - 'Added Czkawka CLI to the image.'
+    - version: 1.0.0
+      date: 2021-01-15
+      changes:
+        - 'Initial release.'
+
+container:
+  storage_permissions: rw
+
+  # Environment variables.
+  environment_variables: []
+
+  # Volumes
+  volumes: []
+
+  # Network ports
+  ports: []
+
+  # Devices
+  devices: []
