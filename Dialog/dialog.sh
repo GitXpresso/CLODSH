@@ -10,10 +10,15 @@ for choice in $choices
 do
     case $choice in
         1)
-            echo "You've selected Jlesage"
+            echo -e "You've selected Jlesage"
+            cd ~/
+            git clone https://github.com/gitxpresso/clodsh.git
+            cd clodsh
             bash 
         2)
             echo "You've selected LinuxServer"
+            cd ~/
+            git clone https://github.com/gitxpresso/clodsh.git
             cd /workspaces/ubuntu-vnc-xfce/clodsh/LinuxServer
             ;;
         3)
