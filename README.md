@@ -1,4 +1,4 @@
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/GitXpresso/CLODSH/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/GitXpresso/CLODSH/graphs/commit-activity)
 [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GitXpressoo/clodsh)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Gitxpresso/clodsh/main)
 
